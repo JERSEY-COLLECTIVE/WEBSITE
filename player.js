@@ -1,10 +1,17 @@
 window.addEventListener("DOMContentLoaded", () => {
   // (A) PLAYER INIT
   // (A1) PLAYLIST - CHANGE TO YOUR OWN!
-  var playlist = [
-      // TODO: use It is more reliable to use an absolute URL here. I.E. http://site.com/songs/mysong.mp3
-    {name: "a", src: "test.mp3"}
-  ];
+    
+
+    
+//  var playlist 
+//  = [
+//      // TODO: use It is more reliable to use an absolute URL here. I.E. http://site.com/songs/mysong.mp3
+//    {src: "init.mp3"},
+//      {src: "0"}
+//  ];
+    
+      //let playlist = document.getElementsByClassName("audio-file");
 
   // (A2) AUDIO PLAYER & GET HTML CONTROLS
   const audio = new Audio(),
@@ -20,16 +27,24 @@ window.addEventListener("DOMContentLoaded", () => {
     
     let audioElements = document.getElementsByClassName("audio-entry");
     
+    var n = audioElements.length;
+    var playlist = [];
+    for (var i = 0; i < n; i++)
+    playlist.push({});
+    
 //    audioElements[0].addEventListener("click", () => { audPlay(0); });
     
   // (A3) BUILD PLAYLIST
   for (let i = 0; i < audioElements.length; i++) {
-      
+      //console.log(audioElements[i].getAttribute("filename"));
 //    let row = document.createElement("div");
 //    row.className = "aRow";
 //    row.innerHTML = playlist[i]["name"];
+    playlist[i]["src"] = audioElements[i].getAttribute("filename");
+       //console.log(playlist[i]);
     audioElements[i].addEventListener("click", () => { audPlay(i); });
     playlist[i]["row"] = audioElements[i];
+   
 //    aList.appendChild(audioElements[i]);
   }
     
@@ -41,10 +56,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // (B2) PLAY SELECTED SONG
   audPlay = (idx, nostart) => {
-      console.log(idx);
     audNow = idx;
     audStart = nostart ? false : true;
-      console.log(playlist[idx]);
+      //console.log(playlist[idx]);
     audio.src = playlist[idx]["src"];
     for (let i in playlist) {
       if (i == idx) { playlist[i]["row"].classList.add("now"); }
