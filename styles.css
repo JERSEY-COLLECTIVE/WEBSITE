@@ -323,8 +323,8 @@ img{
 }
 
 .active, .collapsible:hover {
-background-color: black;
-color: white;
+/*background-color: black;*/
+color: black;
 }
 
 .content {
@@ -483,8 +483,7 @@ a:hover {
 }
 
 .btn.active {
-  background-color: black;
-  color: white;
+  color: black;
 }
 .entries {
   overflow: hidden;
