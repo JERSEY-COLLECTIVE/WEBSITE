@@ -172,32 +172,3 @@ h2{
 
 
 
-.collapsible {
-  cursor: pointer;
-  text-align: left;
-  width: 100%;
-  padding-top: .5em;
-  padding-left: 0em;
-  padding-right: 0em;
-  padding-bottom: .5em;
-  border: none;
-  font-size: 1em;
-  border-top: solid;
-  border-width: 1px;
-  border-color: black;
-  background-color: white;
-  outline: none;
-}
-
-.active, .collapsible:hover {
-    filter: invert();
-}
-
-.content {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0em;
-  padding-right: 0em;
-  display: none;
-  overflow: hidden;
-}

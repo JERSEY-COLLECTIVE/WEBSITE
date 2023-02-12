@@ -212,7 +212,7 @@ top {
   color: red;
 }
 .active, .audio-entry:hover{
-    filter: invert();
+/*    filter: invert();*/
 }
 
 .column2 {
@@ -317,7 +317,7 @@ img{
   border-top: solid;
   border-width: 1px;
   border-color: black;
-  background-color: #FCFBFA;
+  background-color: blue;
   outline: none;
   color: black;
 }
