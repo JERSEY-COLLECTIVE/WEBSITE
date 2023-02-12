@@ -487,6 +487,7 @@ a:hover {
 }
 .entries {
   overflow: hidden;
+    width:50%;
 }
 
 .filterDiv {
