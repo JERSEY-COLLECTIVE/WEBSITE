@@ -200,6 +200,21 @@ top {
     padding-left: 0px;
 }
 
+.audio-entry {
+  float: left;
+  width: 60%;
+  padding: 0em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.audio-entry.now {
+  color: red;
+}
+.active, .audio-entry:hover{
+    filter: invert();
+}
+
 .column2 {
   float: left;
   width: 20%;

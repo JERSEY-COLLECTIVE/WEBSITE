@@ -138,11 +138,10 @@ h2{
   background: #ffffff;
 }
 
-#audio-entry {
 /*
+#audio-entry {
   cursor: pointer;
   padding: 10px 0;
-*/
        font-family: 'tex_gyre_heros_cnregular';
     font-size: 1.2em;
     font-weight: normal;
@@ -169,6 +168,7 @@ h2{
 .active, .audio-entry:hover{
     filter: invert();
 }
+*/
 
 
 

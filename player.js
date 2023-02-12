@@ -3,8 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // (A1) PLAYLIST - CHANGE TO YOUR OWN!
   var playlist = [
       // TODO: use It is more reliable to use an absolute URL here. I.E. http://site.com/songs/mysong.mp3
-    {name: "a", src: "10.18.22.mp3"},
-      {name: "b", src: "09.19.22.mp3"}
+    {name: "a", src: "test.mp3"}
   ];
 
   // (A2) AUDIO PLAYER & GET HTML CONTROLS
