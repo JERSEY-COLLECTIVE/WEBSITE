@@ -61,7 +61,7 @@ h2{
   border-top: solid;
   border-width: 1px;
   padding: 10px;
-  background: #FCFBFA;
+  background: white;
   
          
 }
@@ -104,12 +104,12 @@ h2{
 
 /* (E2) CUSTOM SLIDER TRACK */
 #aWrap input[type=range]::-webkit-slider-runnable-track {
-  background: #FCFBFA;
+/*  background: #FCFBFA;*/
     border-style: solid;
     border-width: 1px;
 }
 #aWrap input[type=range]::-moz-range-track {
-  background: #FCFBFA;
+/*  background: #FCFBFA;*/
     border-style: solid;
       border-width: 1px;
 }
@@ -124,7 +124,7 @@ h2{
   width: 16px; height: 16px;
   border-radius: 50%;
   border: 0;
-  background: #FCFBFA;
+/*  background: #FCFBFA;*/
 }
 
 /* (F) VOLUME */
@@ -139,7 +139,7 @@ h2{
   padding: 10px;
   margin: 10px;
   color: #111;
-  background: #FCFBFA;
+
 }
 
 /*
