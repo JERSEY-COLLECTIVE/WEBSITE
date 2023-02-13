@@ -49,7 +49,7 @@ h1{
     padding: 0px;
     margin: 0px;
     font-size: 1.8em;
-    line-height: .9;
+    line-height: 1;
     font-weight: normal;
    font-family: 'tex_gyre_heros_cnregular';
     
@@ -124,8 +124,20 @@ p3{
     color: black;
 }
 
+p-caption{
+    padding: 0px;
+    margin: 0px;
+    font-size: .75em;
+    line-height: 1.25;
+    max-width: 700px;
+    font-weight: normal;
+   font-family: 'tex_gyre_herosregular';
+    color: black;
+    display: inline-block
+}
+
 em{
-	font-family: 'Junicode', 'Times New Roman', serif; 
+	font-family: 'Times New Roman', serif; 
     font-style: normal;
 }
 
@@ -159,7 +171,6 @@ top {
     padding: 0em;
     margin-top: 0em;
     margin-bottom: 0em;
-    /height: 800px;
     /position: relative;
     max-width: 100%;
    border-color: black;
@@ -178,6 +189,7 @@ top {
     background-color: #EEF9ED;
     color: black;
     padding: 2em;
+    padding-bottom: 5em;
 }
 
 .all{
@@ -188,7 +200,11 @@ top {
 .herotext{
   max-width: 1440px;
   padding-right: 2em;
-  padding-bottom: 21em;
+  padding-bottom: 2em;
+}
+
+.card{
+    padding-bottom: 2em;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -218,16 +234,14 @@ top {
 .column2 {
   float: left;
   width: 20%;
-  padding: 0em;
-    padding-right: 0px;
+  padding-right: 1em;
     padding-left: 0px;
 }
 
 .column3 {
   float: left;
   width: 20%;
-  padding: 0em;
-    padding-right: 0px;
+  padding-right: 1em;
     padding-left: 0px;
 }
 
@@ -242,12 +256,41 @@ top {
 
 .column2-type {
   float: left;
-  width: 40%;
+  width: 20%;
   padding: 0em;
-    padding-right: 0px;
+    padding-right: 1em;
     padding-left: 0px;
     padding-bottom: 1em;
 }
+
+.column3-type {
+  float: left;
+  width: 20%;
+  padding: 0em;
+    padding-right: 1em;
+    padding-left: 0px;
+    padding-bottom: 1em;
+}
+
+.column-hero-right {
+      float: right;
+  width: 40%;
+  padding: 0em;
+    padding-right: 1em;
+    padding-left: 0px;
+    padding-bottom: 1em;
+}
+
+.column-featured{
+      float: left;
+  width: 50%;
+  padding: 0em;
+    padding-right: 1em;
+    padding-left: 0px;
+    padding-bottom: 1em;
+}
+
+.featured-parent-column{float: left; width: 40%}
 
 .body-1{
     float: left;
@@ -296,6 +339,7 @@ padding-top: 0px;
 img{
     width: 100%;
     height: auto; 
+    display: block;
 }
 
 .post{
@@ -319,11 +363,9 @@ img{
   border-color: black;
   background-color: #FCFBFA;
   outline: none;
-  color: black;
 }
 
 .active, .collapsible:hover {
-/*background-color: black;*/
 color: black;
 }
 
@@ -338,7 +380,6 @@ color: black;
 
 a {
     color: black;
-    text-decoration: none;
 }
 
 a:hover {
@@ -348,6 +389,30 @@ a:hover {
 
 .logo {
     max-width: 300px;
+}
+
+.gallery-wide {
+   max-width: 500px;
+   display: inline-block;
+   padding-right: 0em;
+   padding-bottom: 0em;
+}
+
+.gallery-square {
+   max-width: 400px;
+   display: inline-block;
+   padding-right: 0em;
+   padding-bottom: 0em;
+}
+
+.gallery-tall {
+   max-width: 300px;
+   display: inline-block;
+   padding-right: 0em;
+   padding-bottom: 0em;
+}
+
+.gallery-container {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -361,9 +426,8 @@ a:hover {
     }
 }
 @media screen and (max-width: 800px) {
-        h0 {
-        font-size: 2.6em;
-        letter-spacing: -2px;
+        h1 {
+        font-size: 1.4em;
     }
     
     .flex-container > div {
@@ -386,6 +450,14 @@ a:hover {
     padding-left: 0px;
 }
     
+    .column3-type {
+  float: left;
+  width: 100%;
+  padding: .5em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+    
 .body-1{
     float: left;
     width: 100%;
@@ -401,11 +473,25 @@ a:hover {
         max-width: 50%;
     }
     
+   .gallery-wide {
+   max-width: 300px;
+}
+    
+   .gallery-square {
+   max-width: 200px;
+}
+
+.gallery-tall {
+   max-width: 150px;
+}
+    
+.featured-parent-column{float: left; width: 100%}
+    
 }
 @media screen and (max-width: 600px) {
     
     .hero{
-    height: 600px;
+    /height: 600px;
 }
         #window {
   width: 200px;
@@ -473,7 +559,7 @@ a:hover {
   border-width: 1px;
   border-color: black;
   padding: 4px 12px 5px 12px;
-  /text-align: center;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -483,7 +569,8 @@ a:hover {
 }
 
 .btn.active {
-  color: black;
+  background-color: black;
+  color: white;
 }
 .entries {
   overflow: hidden;
