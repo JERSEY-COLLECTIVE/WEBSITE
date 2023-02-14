@@ -29,14 +29,7 @@
 
 }
 
-h2{
-    padding: 0px;
-    margin: 0px;
-   font-family: 'tex_gyre_heros_cnregular';
-    font-size: 1.2em;
-    font-weight: normal;
-    color: black;
-}
+
 
 /* (A) MATERIAL ICONS */
 
@@ -48,10 +41,10 @@ h2{
   src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
 }
 
+
 .aPlayIco {
   font-size: 28px;
-  color: #111;
-      font-family: 'Material Icons';
+  font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -62,6 +55,7 @@ h2{
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
+
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
@@ -154,6 +148,9 @@ h2{
 /* (F) VOLUME */
 #aVolIco {
   margin: 0 10px;
+      font-size: 28px;
+  color: #111;
+  font-family: 'Material Icons';
 }
 
 /* (G) PLAYLIST */

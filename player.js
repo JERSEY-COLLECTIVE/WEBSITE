@@ -13,7 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
         aVolIco = document.getElementById("aVolIco"),
         aList = document.getElementById("aList"),
         button = document.getElementById("aTest");
-    console.log(aPlayIco);
     let audioElements = document.getElementsByClassName("audio-entry");
     
     var n = audioElements.length;
