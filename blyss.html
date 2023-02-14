@@ -7,7 +7,7 @@
     <title>JERSEY COLLECTIVE</title>
     <link rel="stylesheet" href="/blyss-src/blyss-styles.css">
     <link rel="stylesheet" href="./player.css"/>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script defer src="player.js"></script>
   </head>
@@ -19,11 +19,17 @@
 <!--    TODO: CHANGE FILENAME ATTRIBUTES-->
         <!-- A.INF #17  -->
         <div class="filterDiv mix">
-            <button type="button" class="collapsible">
+            <div type="button" class="collapsible">
             <div class="post">
                 <div class="row">
                     <div class="column1">
-                        <h2>APPROACHING &#8734 - BROADCAST #17</h2>
+                           <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 02.10.23 - 17.mp3">    
+                           <span class="aPlayIco" >play_arrow</span> </div>   
+                        <h2>APPROACHING &#8734 - BROADCAST #17 
+
+                        
+                             </h2>    
+                        
                     </div>
                 <div class="column2">
                     <h4>BLYSS</h4>
@@ -33,11 +39,11 @@
                 </div>
                 </div>
             </div>
-        </button>
+        </div>
+            
         <div class="content">
-            <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 02.10.23 - 17.mp3">
-                <span id="aPlayIco" class="material-icons">play_arrow</span>
-            </div>
+            
+            
                     <p></p>
         
             <br>
@@ -452,7 +458,7 @@
         </button>
         <div class="content">
             <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 09.19.22 - 1.mp3">
-                <span id="aPlayIco" class="material-icons">play_arrow</span>
+                <span class="aPlayIco" class="material-icons">play_arrow</span>
             </div>
                     <p></p>
         
@@ -466,7 +472,7 @@
      <!--AUDIO PLAYER -->
     <div id="aWrap">
       <!-- (A) PLAY/PAUSE BUTTON -->
-      <button id="aPlay" disabled><span id="aPlayIco" class="material-icons">
+      <button id="aPlay" disabled><span class="aPlayIco" >
         play_arrow
       </span></button>
 
@@ -479,27 +485,28 @@
       <input id="aSeek" type="range" min="0" value="0" step="1" disabled/>
 
       <!-- (D) VOLUME SLIDE -->
-      <span id="aVolIco" class="material-icons">volume_up</span>
+      <span id="aVolIco" class="aPlayIco">volume_up</span>
       <input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" disabled/>
     </div>
         </body>
     
-    <script>
     
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+<script>
+    
+//var coll = document.getElementsByClassName("collapsible");
+//var i;
+//
+//for (i = 0; i < coll.length; i++) {
+//  coll[i].addEventListener("click", function() {
+//    this.classList.toggle("active");
+//    var content = this.nextElementSibling;
+//    if (content.style.display === "block") {
+//      content.style.display = "none";
+//    } else {
+//      content.style.display = "block";
+//    }
+//  });
+//}
     
     filterSelection("all")
 function filterSelection(c) {

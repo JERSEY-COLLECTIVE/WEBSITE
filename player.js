@@ -1,22 +1,11 @@
 window.addEventListener("DOMContentLoaded", () => {
   // (A) PLAYER INIT
   // (A1) PLAYLIST - CHANGE TO YOUR OWN!
-    
-
-    
-//  var playlist 
-//  = [
-//      // TODO: use It is more reliable to use an absolute URL here. I.E. http://site.com/songs/mysong.mp3
-//    {src: "init.mp3"},
-//      {src: "0"}
-//  ];
-    
-      //let playlist = document.getElementsByClassName("audio-file");
 
   // (A2) AUDIO PLAYER & GET HTML CONTROLS
   const audio = new Audio(),
         aPlay = document.getElementById("aPlay"),
-        aPlayIco = document.getElementById("aPlayIco"),
+        aPlayIco = document.getElementsByClassName("aPlayIco"),
         aNow = document.getElementById("aNow"),
         aTime = document.getElementById("aTime"),
         aSeek = document.getElementById("aSeek"),
@@ -24,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
         aVolIco = document.getElementById("aVolIco"),
         aList = document.getElementById("aList"),
         button = document.getElementById("aTest");
-    
+    console.log(aPlayIco);
     let audioElements = document.getElementsByClassName("audio-entry");
     
     var n = audioElements.length;
@@ -42,7 +31,14 @@ window.addEventListener("DOMContentLoaded", () => {
 //    row.innerHTML = playlist[i]["name"];
     playlist[i]["src"] = audioElements[i].getAttribute("filename");
        //console.log(playlist[i]);
-    audioElements[i].addEventListener("click", () => { audPlay(i); });
+    audioElements[i].addEventListener("click", () => { 
+        if (audio.paused){
+            audPlay(i); 
+        }
+        else {
+            audio.pause();
+        }
+    });
     playlist[i]["row"] = audioElements[i];
    
 //    aList.appendChild(audioElements[i]);
@@ -85,10 +81,14 @@ window.addEventListener("DOMContentLoaded", () => {
   // (C) PLAY/PAUSE BUTTON
   // (C1) AUTO SET PLAY/PAUSE TEXT
   audio.addEventListener("play", () => {
-    aPlayIco.innerHTML = "pause";
+      for(let i = 0; i < aPlayIco.length; i++){
+          aPlayIco[i].innerHTML = "pause";
+      }  
   });
   audio.addEventListener("pause", () => {
-    aPlayIco.innerHTML = "play_arrow";
+      for(let i = 0; i < aPlayIco.length; i++){
+          aPlayIco[i].innerHTML = "play_arrow";
+      }  
   });
 
   // (C2) CLICK TO PLAY/PAUSE
