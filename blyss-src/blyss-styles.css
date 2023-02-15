@@ -6,7 +6,12 @@
 
 @font-face {
     font-family: blyssfont1;
-    src: url("/blyss-src/fonts/blyssfont3.ttf") format("opentype");
+    src: url("/blyss-src/fonts/blyssfont4.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: blyssfont2;
+    src: url("/blyss-src/fonts/blyssfont2.otf") format("opentype");
 }
 
 
@@ -21,7 +26,7 @@ h0{
     font-size: 3.6em;
     line-height: .8;
     font-weight: normal;
-   font-family: 'blyssfont1';
+   font-family: 'blyssfont2';
     letter-spacing: -1px;
 }
 
@@ -32,7 +37,7 @@ h1{
     text-align: center;
     font-weight: normal;
     font-style: italic;
-   font-family: 'blyssfont1';
+   font-family: 'blyssfont2';
     color: dodgerblue;
     
 }
@@ -40,12 +45,13 @@ h1{
 h2{
     padding: 0px;
     margin: 0px;
-    color: white;
+    color: mintcream;
    font-family: 'blyssfont1';
-    -webkit-text-stroke: 1px rgb(192,192,192, .25);
+/*    -webkit-text-stroke: 1px rgb(192,192,192, 1.0);*/
     font-weight: 600;
-    font-size: 1.5em;
-    text-shadow: 0px 0px 7px silver;
+    font-size: 2.0em;
+    text-shadow: 2px 2px 0px navy;
+/*        rgb(49,93,255);*/
   
     
 }
@@ -187,6 +193,7 @@ top {
     width:100%;
     padding-left: 0px;
     color: white;
+    vertical-align: middle;
 }
 
 .audio-entry {
@@ -295,13 +302,16 @@ img{
 .collapsible {
   cursor: pointer;
   text-align: left;
-  padding-top: .5em;
   padding-left: 0em;
   padding-right: 0em;
 
   color: white;
-/*    background-color: rgb(234,131,89,.5);*/
-/*    mix-blend-mode: exclusion;*/
+    border-radius: 20px;
+    background-color: rgb(110,110,110);
+    border-style: ridge;
+    border-color: silver;
+    border-width: 5px;
+    mix-blend-mode: hard-light;
 }
 
 .active, .collapsible:hover {
@@ -469,9 +479,8 @@ a:hover {
     
 }
 .entries {
-
+    width: 40%;
   overflow: hidden;
-  width:40%;
 
 }
 
