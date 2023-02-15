@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: blyssfont1;
-    src: url("/blyss-src/blyssfont1.ttf") format("opentype");
+    src: url("/blyss-src/fonts/blyssfont2.otf") format("opentype");
 }
 
 
@@ -26,23 +26,24 @@ h0{
 }
 
 h1{
-    padding: 0px;
-    margin: 0px;
-    font-size: 1.8em;
-    line-height: .9;
+    width: 50%;
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
     font-weight: normal;
    font-family: 'blyssfont1';
-    color: white;
+    color: dodgerblue;
     
 }
 
 h2{
     padding: 0px;
     margin: 0px;
-    color: white;
+    color: dodgerblue;
    font-family: 'blyssfont1';
-    font-size: 1.2em;
-    font-weight: bolder;
+    font-size: 2.3em;
+    
+  
     
 }
 
@@ -56,7 +57,6 @@ h3{
 }
 
 h4{
-    padding-right: 10px;
     margin: 0px;
    font-family: 'blyssfont1';
     font-weight: bolder;
@@ -116,8 +116,9 @@ em{
 /* -----------------MEAT-------------------- */
 
 body {
-    background-image: url("/blyss-src/blyssground.png");
-    background-repeat: repeat;
+    background-image: url("/blyss-src/blyssground3.png");
+/*    background-repeat: repeat;*/
+    background-size: auto;
     cursor: crosshair;
     margin: 0;
 }
@@ -179,9 +180,8 @@ top {
 /* Create three equal columns that floats next to each other */
 .column1 {
   float: left;
-width:35%;
   padding: 0em;
-    padding-right: 0px;
+    width: 6em;
     padding-left: 0px;
     color: white;
 }
@@ -204,7 +204,7 @@ width:35%;
   float: left;
 
   padding: 0em;
-    padding-right: 0px;
+    padding-right: 15px;
     padding-left: 0px;
 }
 
@@ -295,23 +295,15 @@ img{
   padding-top: .5em;
   padding-left: 0em;
   padding-right: 0em;
-  padding-bottom: .5em;
-  border: none;
-  font-size: 1.5em;
-  border-style: solid;
-  border-width: 4px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 15px;
-  border-color: lightgrey;
-    background-color: orange;
-    
 
   color: white;
+/*    background-color: rgb(234,131,89,.5);*/
+/*    mix-blend-mode: exclusion;*/
 }
 
 .active, .collapsible:hover {
 /*background-color: black;*/
-  text-shadow: 2px 2px 10px white;
+  box-shadow: 2px 2px 10px white;
 }
 
 .content {
@@ -476,7 +468,7 @@ a:hover {
 .entries {
 
   overflow: hidden;
-  width:35%;
+  width:40%;
 
 }
 
