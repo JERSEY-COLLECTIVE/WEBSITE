@@ -5,12 +5,12 @@
 }
 
 @font-face {
-    font-family: blyssfont1;
-    src: url("/blyss-src/fonts/blyssfont4.ttf") format("opentype");
+    font-family: 'blyssfont1';
+    src: url("/blyss-src/fonts/blyssfont4.ttf") format('truetype');
 }
 
 @font-face {
-    font-family: blyssfont2;
+    font-family: 'blyssfont2;
     src: url("/blyss-src/fonts/blyssfont2.otf") format("opentype");
 }
 
