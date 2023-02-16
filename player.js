@@ -19,6 +19,12 @@ window.addEventListener("DOMContentLoaded", () => {
         playlist.push({});
     }
     
+    
+    function handleInteraction(evt) {
+        evt.preventDefault()
+        console.log('interacted')
+    }
+    
   // (A3) BUILD PLAYLIST
   for (let i = 0; i < audioElements.length; i++) {
       //console.log(audioElements[i].getAttribute("filename"));
@@ -28,6 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
     playlist[i]["src"] = audioElements[i].getAttribute("filename");
        //console.log(playlist[i]);
     audioElements[i].addEventListener("click", () => { 
+        handleInteraction;
         if (audio.paused){
             idxPlaying = i;
             audPlay(i); 
@@ -36,6 +43,17 @@ window.addEventListener("DOMContentLoaded", () => {
             audio.pause();
         }
     });
+    audioElements[i].addEventListener("touchstart", () => {
+        handleInteraction;
+        if (audio.paused){
+            idxPlaying = i;
+            audPlay(i); 
+        }
+        else {
+            audio.pause();
+        }
+    });
+      
     playlist[i]["row"] = audioElements[i];
    
   }
@@ -91,6 +109,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // (C2) CLICK TO PLAY/PAUSE
   aPlay.addEventListener("click", () => {
+    handleInteraction;
     if (audio.paused) { audio.play(); }
     else { audio.pause(); }
   });
