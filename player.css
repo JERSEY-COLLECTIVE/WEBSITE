@@ -43,7 +43,8 @@
 
 
 .aPlayIco {
-  font-size: 2.0em;
+  float: left;
+  font-size: 1.75em;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;

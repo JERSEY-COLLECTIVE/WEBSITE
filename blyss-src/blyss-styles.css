@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: 'blyssfont2;
-    src: url("/blyss-src/fonts/blyssfont2.otf") format("opentype");
+    font-family: 'blyssfont2';
+    src: url("/blyss-src/fonts/blyssfont6.ttf") format("truetype");
 }
 
 
@@ -38,19 +38,20 @@ h1{
     font-weight: normal;
     font-style: italic;
    font-family: 'blyssfont2';
-    color: dodgerblue;
+    color: white;
+        text-shadow: 0px 0px 4px rgb(38,84,255);
     
 }
 
 h2{
+    float: left;
     padding: 0px;
     margin: 0px;
-    color: mintcream;
+    color: rgb(200,200,200);
    font-family: 'blyssfont1';
 /*    -webkit-text-stroke: 1px rgb(192,192,192, 1.0);*/
-    font-weight: 600;
-    font-size: 2.0em;
-    text-shadow: 2px 2px 0px navy;
+    font-size: 1.75em;
+/*    text-shadow: 2px 2px 0px navy;*/
 /*        rgb(49,93,255);*/
   
     
@@ -128,6 +129,7 @@ body {
     background-image: url("/blyss-src/blyssground3.png");
 /*    background-repeat: repeat;*/
     background-size: auto;
+    background-attachment: fixed;
     cursor: crosshair;
     margin: 0;
 }
@@ -187,28 +189,56 @@ top {
 }
 
 /* Create three equal columns that floats next to each other */
-.column1 {
-  float: left;
-  padding: 0em;
-    width:100%;
-    padding-left: 0px;
-    color: white;
-    vertical-align: middle;
-}
+
 
 .audio-entry {
-  float: left;
-  padding: 0em;
-    padding-right: 0px;
-    padding-left: 0px;
+/*
+  cursor: pointer;
+  text-align: left;
+  padding-left: 0em;
+  padding-right: 0em;
+
+  color: white;
+    border-radius: 20px;
+    background-color: white;
+    background-color: rgb(110,110,110);
+    border-style: outset;
+    border-color: white;
+    border-width: 5px;
+    mix-blend-mode: hard-light;
+    box-shadow: 2px 2px 5px silver;
+    width: 40%;
+*/
+
+}
+
+.column1 {
+    float: left;
+      cursor: pointer;
+  text-align: left;
+  padding-left: .5em;
+  padding-right: .5em;
+
+    border-radius: 20px;
+    background-color: white;
+/*    background-color: rgb(110,110,110);*/
+    border-style: outset;
+    border-color: white;
+    border-width: 5px;
+/*    mix-blend-mode: hard-light;*/
+    box-shadow: 2px 2px 5px silver;
+    width: auto;
+}
+
+.active, .column1:hover{
+/*    filter: invert();*/
+      border-color: rgb(212, 108, 234);
 }
 
 .audio-entry.now {
   color: red;
 }
-.active, .audio-entry:hover{
-/*    filter: invert();*/
-}
+
 
 .column2 {
   float: left;
@@ -307,16 +337,18 @@ img{
 
   color: white;
     border-radius: 20px;
-    background-color: rgb(110,110,110);
-    border-style: ridge;
-    border-color: silver;
+    background-color: white;
+/*    background-color: rgb(110,110,110);*/
+    border-style: outset;
+    border-color: white;
     border-width: 5px;
-    mix-blend-mode: hard-light;
+/*    mix-blend-mode: hard-light;*/
+    box-shadow: 2px 2px 5px silver;
 }
 
 .active, .collapsible:hover {
 /*background-color: black;*/
-  box-shadow: 2px 2px 10px white;
+  border-color: lawngreen;
 }
 
 .content {
@@ -479,7 +511,6 @@ a:hover {
     
 }
 .entries {
-    width: 40%;
   overflow: hidden;
 
 }
