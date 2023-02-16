@@ -1,8 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  // (A) PLAYER INIT
-  // (A1) PLAYLIST - CHANGE TO YOUR OWN!
 
-  // (A2) AUDIO PLAYER & GET HTML CONTROLS
   const audio = new Audio(),
         aPlay = document.getElementById("aPlay"),
         aPlayIco = document.getElementsByClassName("aPlayIco"),
@@ -11,16 +8,16 @@ window.addEventListener("DOMContentLoaded", () => {
         aSeek = document.getElementById("aSeek"),
         aVolume = document.getElementById("aVolume"),
         aVolIco = document.getElementById("aVolIco"),
-        aList = document.getElementById("aList"),
         button = document.getElementById("aTest");
     let audioElements = document.getElementsByClassName("audio-entry");
     
+    var idxPlaying = 0; //which track is playing
+    
     var n = audioElements.length;
     var playlist = [];
-    for (var i = 0; i < n; i++)
-    playlist.push({});
-    
-//    audioElements[0].addEventListener("click", () => { audPlay(0); });
+    for (var i = 0; i < n; i++){
+        playlist.push({});
+    }
     
   // (A3) BUILD PLAYLIST
   for (let i = 0; i < audioElements.length; i++) {
@@ -32,6 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
        //console.log(playlist[i]);
     audioElements[i].addEventListener("click", () => { 
         if (audio.paused){
+            idxPlaying = i;
             audPlay(i); 
         }
         else {
@@ -40,7 +38,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     playlist[i]["row"] = audioElements[i];
    
-//    aList.appendChild(audioElements[i]);
   }
     
   
@@ -81,7 +78,9 @@ window.addEventListener("DOMContentLoaded", () => {
   // (C1) AUTO SET PLAY/PAUSE TEXT
   audio.addEventListener("play", () => {
       for(let i = 0; i < aPlayIco.length; i++){
-          aPlayIco[i].innerHTML = "pause";
+          if (i == idxPlaying || i == aPlayIco.length-1){ 
+            aPlayIco[i].innerHTML = "pause";
+          }
       }  
   });
   audio.addEventListener("pause", () => {
