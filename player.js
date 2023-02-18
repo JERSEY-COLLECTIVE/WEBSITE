@@ -33,33 +33,38 @@ window.addEventListener("DOMContentLoaded", () => {
 //    row.innerHTML = playlist[i]["name"];
     playlist[i]["src"] = audioElements[i].getAttribute("filename");
        //console.log(playlist[i]);
-    audioElements[i].addEventListener("click", clickAudio); 
+    audioElements[i].addEventListener("touchend", tapAudio, true);
+    audioElements[i].addEventListener("click", clickAudio, true);
+
+      
+            function tapAudio(evt) { 
+                console.log("Here a touchstart event is triggered");
+                evt.preventDefault();
+                console.log("TAP START");
+                if (audio.paused){
+                    idxPlaying = i;
+                    audPlay(i); 
+                    audio.play();
+                }
+                else {
+                    audio.pause();
+                }
+        };
                                       
         function clickAudio(evt) { 
-            evt.preventDefault();
-            if (audio.paused){
-
-                idxPlaying = i;
-                audPlay(i); 
-            }
-            else {
-                audio.pause();
-            }
+              console.log("Here a clickstart event is triggered");
+                evt.preventDefault();
+                console.log("CLICK START");
+                if (audio.paused){
+                    idxPlaying = i;
+                    audPlay(i); 
+                }
+                else {
+                    audio.pause();
+                }
         };
-    audioElements[i].addEventListener("touchend", tapAudio);
-      
-          function tapAudio(evt) { 
-            evt.preventDefault();
-            if (audio.paused){
+    
 
-                idxPlaying = i;
-                audPlay(i); 
-            }
-            else {
-
-                audio.pause();
-            }
-            };
       
     playlist[i]["row"] = audioElements[i];
    
