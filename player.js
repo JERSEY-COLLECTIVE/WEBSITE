@@ -20,10 +20,10 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     
     
-    function handleInteraction(evt) {
-        evt.preventDefault()
-        console.log('interacted')
-    }
+//    function handleInteraction(evt) {
+//        evt.preventDefault()
+//        console.log('interacted')
+//    }
     
   // (A3) BUILD PLAYLIST
   for (let i = 0; i < audioElements.length; i++) {
@@ -33,26 +33,33 @@ window.addEventListener("DOMContentLoaded", () => {
 //    row.innerHTML = playlist[i]["name"];
     playlist[i]["src"] = audioElements[i].getAttribute("filename");
        //console.log(playlist[i]);
-    audioElements[i].addEventListener("click", () => { 
-        handleInteraction;
-        if (audio.paused){
-            idxPlaying = i;
-            audPlay(i); 
-        }
-        else {
-            audio.pause();
-        }
-    });
-    audioElements[i].addEventListener("touchstart", () => {
-        handleInteraction;
-        if (audio.paused){
-            idxPlaying = i;
-            audPlay(i); 
-        }
-        else {
-            audio.pause();
-        }
-    });
+    audioElements[i].addEventListener("click", clickAudio); 
+                                      
+        function clickAudio(evt) { 
+            evt.preventDefault();
+            if (audio.paused){
+
+                idxPlaying = i;
+                audPlay(i); 
+            }
+            else {
+                audio.pause();
+            }
+        };
+    audioElements[i].addEventListener("touchend", tapAudio);
+      
+          function tapAudio(evt) { 
+            evt.preventDefault();
+            if (audio.paused){
+
+                idxPlaying = i;
+                audPlay(i); 
+            }
+            else {
+
+                audio.pause();
+            }
+            };
       
     playlist[i]["row"] = audioElements[i];
    
@@ -108,11 +115,26 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // (C2) CLICK TO PLAY/PAUSE
-  aPlay.addEventListener("click", () => {
-    handleInteraction;
-    if (audio.paused) { audio.play(); }
-    else { audio.pause(); }
-  });
+  aPlay.addEventListener("click", clickPlay);
+
+    function clickPlay(evt){
+  
+        evt.preventDefault();
+        if (audio.paused) { audio.play(); }
+        else { audio.pause(); }
+  };
+    
+
+      // (C2) CLICK TO PLAY/PAUSE
+  aPlay.addEventListener("touchend", tapPlay);
+    
+    function tapPlay(evt){
+  
+        evt.preventDefault();
+        if (audio.paused) { audio.play(); }
+        else { audio.pause(); }
+  };
+    
 
   // (D) TRACK PROGRESS
   // (D1) SUPPORT FUNCTION - FORMAT HH:MM:SS
