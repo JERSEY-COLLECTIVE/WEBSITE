@@ -221,10 +221,11 @@ top {
     width: auto;
 
 }
-
-.active, .audio-entry:hover{
-/*    filter: invert();*/
-      border-color: #FF6FFF;
+@media (min-device-width:768px) {
+    .active, .audio-entry:hover{
+    /*    filter: invert();*/
+          border-color: #FF6FFF;
+    }
 }
 
 .audio-entry.now {
