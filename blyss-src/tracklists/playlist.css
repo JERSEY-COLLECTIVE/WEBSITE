@@ -1,0 +1,9 @@
+table.tracklist {
+    font-size: 12px;
+    background-color: slategray;
+    border-radius: 20px;
+}
+
+tr.heading {
+    text-justify: left;
+}

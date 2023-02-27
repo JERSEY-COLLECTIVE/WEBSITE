@@ -10,14 +10,15 @@
 <!--          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script defer src="player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
     
     <body>
         
     <h1> a &#8594 &#8734</h1>
         <div class="entries">
+            <div class="column">
        
-<!--    TODO: CHANGE FILENAME ATTRIBUTES-->
             <!-- A.INF #18  -->
             <div class="row">
                     <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 02.24.23 - 18.mp3">
@@ -188,6 +189,13 @@
             </div>
             <br>
             <br><br><br><br>
+            </div>
+        
+        
+            <div class="column">
+
+                    <object class="tracklist" data="/blyss-src/tracklists/Playlist-for-approaching-∞-2-24-23.html"></object>
+            </div>
         </div>
         
      <!--AUDIO PLAYER -->
@@ -209,7 +217,7 @@
       <span id="aVolIco" class="material-icon">volume_up</span>
       <input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" disabled/>
     </div>
-        </body>
+    </body>
     
     
 <script>
