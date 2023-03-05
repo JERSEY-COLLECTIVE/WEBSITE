@@ -474,15 +474,15 @@ a:hover {
     }
     
    .gallery-wide {
-   max-width: 300px;
+   max-width: 250px;
 }
     
    .gallery-square {
-   max-width: 200px;
+   max-width: 150px;
 }
 
 .gallery-tall {
-   max-width: 150px;
+   max-width: 100px;
 }
     
 .featured-parent-column{float: left; width: 100%}
