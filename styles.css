@@ -144,7 +144,7 @@ em{
 /* -----------------MEAT-------------------- */
 
 body {
-    background-color: #FCFBFA;
+    background-color: white;
     cursor: crosshair;
     margin: 0;
 }
@@ -352,16 +352,16 @@ img{
   cursor: pointer;
   text-align: left;
   width: 100%;
-  padding-top: .5em;
+  padding-top: 1em;
   padding-left: 0em;
   padding-right: 0em;
-  padding-bottom: .5em;
+  padding-bottom: 1em;
   border: none;
   font-size: 1em;
   border-top: solid;
   border-width: 1px;
   border-color: black;
-  background-color: #FCFBFA;
+  background-color: white;
   outline: none;
 }
 
@@ -394,22 +394,22 @@ a:hover {
 .gallery-wide {
    max-width: 500px;
    display: inline-block;
-   padding-right: 0em;
-   padding-bottom: 0em;
+   padding-right: 1em;
+   padding-bottom: 1em;
 }
 
 .gallery-square {
    max-width: 400px;
    display: inline-block;
-   padding-right: 0em;
-   padding-bottom: 0em;
+   padding-right: 1em;
+   padding-bottom: 1em;
 }
 
 .gallery-tall {
    max-width: 300px;
    display: inline-block;
-   padding-right: 0em;
-   padding-bottom: 0em;
+   padding-right: 1em;
+   padding-bottom: 1em;
 }
 
 .gallery-container {
@@ -474,15 +474,15 @@ a:hover {
     }
     
    .gallery-wide {
-   max-width: 250px;
+   max-width: 100%;
 }
     
    .gallery-square {
-   max-width: 150px;
+   max-width: 49%;
 }
 
 .gallery-tall {
-   max-width: 100px;
+   max-width: 49%;
 }
     
 .featured-parent-column{float: left; width: 100%}
@@ -555,7 +555,7 @@ a:hover {
 /* FILTER */
 
 .btn {
-  background-color: #FCFBFA;
+  background-color: white;
   border-width: 1px;
   border-color: black;
   padding: 4px 12px 5px 12px;
