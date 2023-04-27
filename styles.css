@@ -30,11 +30,6 @@
 
 }
 
-	@font-face {
-  		font-family: 'Junicode';
-  		src: url('https://www.pwnhc.ca/webfonts/Junicode.woff') format('woff');
-	}
-
 h0{
     padding: 0px;
     margin: 0px;
@@ -137,15 +132,17 @@ p-caption{
 }
 
 em{
-	font-family: 'Times New Roman', serif; 
-    font-style: normal;
+font-family: 'BIZ UDMincho', serif;
+font-size: 1.2em;
+font-style: italic;
+letter-spacing: -1px;
+line-height: 0%;
 }
 
 /* -----------------MEAT-------------------- */
 
 body {
-    background-color: white;
-    cursor: crosshair;
+    cursor: auto;
     margin: 0;
 }
 
@@ -186,7 +183,6 @@ top {
 
 
 .footer{
-    background-color: #EEF9ED;
     color: black;
     padding: 2em;
     padding-bottom: 5em;
@@ -352,21 +348,21 @@ img{
   cursor: pointer;
   text-align: left;
   width: 100%;
-  padding-top: 1em;
+  padding-top: 1.5em;
   padding-left: 0em;
   padding-right: 0em;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
   border: none;
   font-size: 1em;
   border-top: solid;
   border-width: 1px;
   border-color: black;
-  background-color: white;
+  background: none;
   outline: none;
 }
 
 .active, .collapsible:hover {
-color: black;
+font-style: italic;
 }
 
 .content {
@@ -394,22 +390,25 @@ a:hover {
 .gallery-wide {
    max-width: 500px;
    display: inline-block;
-   padding-right: 1em;
-   padding-bottom: 1em;
+   padding-right:.25em;
+   padding-bottom:.5em;
+   vertical-align: top;
 }
 
 .gallery-square {
    max-width: 400px;
    display: inline-block;
-   padding-right: 1em;
-   padding-bottom: 1em;
+   padding-right: .25em;
+   padding-bottom: .5em;
+   vertical-align: top;
 }
 
 .gallery-tall {
    max-width: 300px;
    display: inline-block;
-   padding-right: 1em;
-   padding-bottom: 1em;
+   padding-right: .25em;
+   padding-bottom: .5em;
+   vertical-align: top;
 }
 
 .gallery-container {
