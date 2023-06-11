@@ -19,96 +19,112 @@
     
 <body>
 <div class="all">
-      <div class="header">
-        <div class="row">
-            <div class="column1">
-                <div class="logo">
-                    <img src="imgs/jersey-test-logo.svg" style="width: 5em;"><br>
-                    <p style="color: white;">hehe</p>
-                </div>
+
+
+    <div class="row">
+        <div class="header">
+        <div class="column1">
+            <div class="logo">
+            <img src="imgs/jersey-test-logo.svg" style="height: 24px; padding-top: 4px;">
             </div>
-            <div class="column2" style="padding-bottom: .5em;">
-                <p3><a href="https://discord.gg/KEDYxmsbZX">DISCORD</a></p3><br>
-                <p3><a href="https://www.instagram.com/jersey.collective/">INSTAGRAM</a></p3><br>
-                <p3><a href="mailto:jerseycollective.contact@gmail.com">EMAIL</a></p3>
+        </div>
+        <div class="column1">
+            <div class="nav">
+            <h2><a href="https://discord.gg/yGNvm6XE">Discord</a></h2>
+            <h2><a href="https://www.instagram.com/jersey.collective/">Instagram</a></h2>
+            <h2><a href="mailto:jerseycollective.contact@gmail.com">Email</a></h2>
             </div>
-                <div class="column3">
-                </div>
+        </div>
         </div>
     </div>
     
+    <!--AUDIO PLAYER -->
+    <div id="aWrap">
+      <!-- (A) PLAY/PAUSE BUTTON -->
+      <button id="aPlay" disabled><span class="aPlayIco" style="color:black" >
+        play_arrow
+      </span></button>
+
+      <!-- (B) TIME -->
+      <div id="aCron">
+        <span id="aNow"></span> / <span id="aTime"></span>
+      </div>
+
+      <!-- (C) SEEK BAR -->
+      <input id="aSeek" type="range" min="0" value="0" step="1" style="width: 80%;" disabled/>
+
+      <!-- (D) VOLUME SLIDE -->
+      <span id="aVolIco" class="material-icons">volume_up</span>
+      <input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" style="width: 20%;" disabled/>
+    </div>
+
+    
     <div class="hero">
         <div class="row">
-            <div class="column1-type">
-          <div class="herotext">
-              <br><h2>ABOUT</h2><br>     
-          </div>
+                <div class="relative">
+                <div class="absolute1">
+                <div class="zoom">
+                    <img src="imgs/featured/approaching-infinity-portrait-layout-color2.jpg">
+                </div>
+                </div>
+                <div class="absolute2">
+                    <span class="dot"></span>
+                </div>
+                <div class="absolute3">
+                    <span class="dot"></span>
+                </div>
             </div>
-            
-            <br><h2>FEATURED</h2><br>
-            
-        <div class="featured-parent-column">
-            <div class="row">
-            <div class="column-featured">
-              <div class="card">
-                <img src="imgs/featured/approaching-infinity-portrait-layout-color2.jpg">
-                  <p-caption>approaching ∞ with blyss. Every week on Friday at 11AM EST on <a href="https://wcbn.org/">wcbn.org</a></p-caption><br>
-            </div> 
-            </div>
-            
-        <div class="column-featured">
-          <div class="card">
-                <p-caption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo.</p-caption><br>
-              </div>
-            </div>
-            </div>
-            
-            <div class="row">    
-            <div class="column-featured">
-              <div class="card">
-                  <p-caption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p-caption><br>
-            </div> 
-            </div>
-            
-        <div class="column-featured">
-          <div class="card">
-                <p-caption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo.</p-caption><br>
-              </div>
-            </div>
-            </div>
-            
-        </div>
-
-            
         </div>
     </div>
         
-    <h2>WORK</h2><br>
+<div class="menu">
+<h2 style="padding-bottom: 18px;">Filter</h2>
 <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"><p2> Show all</p2></button>
-  <button class="btn" onclick="filterSelection('mix')"> <p2>Mix</p2></button>
-    <button class="btn" onclick="filterSelection('art')"><p2>Art</p2></button>
-  <button class="btn" onclick="filterSelection('event')"><p2>Event</p2></button>
+    <button class="btn active" onclick="filterSelection('all')"><h2>Show all</h2></button>
+  <button class="btn" onclick="filterSelection('mix')"> <h2>Mix</h2></button>
+    <button class="btn" onclick="filterSelection('art')"><h2>Art</h2></button>
+  <button class="btn" onclick="filterSelection('event')"><h2>Event</h2></button>
 </div>
-<br>
+    </div>
+    <div class="menu" style="border-top: 1px black solid;">
+    <div class="post">
+        <div class="row">
+            <div class="column-colap-1">
+                <h2>Nº</h2>
+            </div>
+            <div class="column-colap-2">
+                <h2>Title</h2>
+            </div>
+        <div class="column-colap-3">
+            <h4>Type</h4>
+        </div>
+        <div class="column-colap-4">
+            <div class="right-date"><h2>Date</h2></div>
+        </div>
+        </div>
+    </div>
+    </div>
     
     <div class="entries"> 
         
           <div class="filterDiv mix">
             <button type="button" class="collapsible">
-            <div class="post">
-                <div class="row">
-                    <div class="column1">
-                        <h2>MIX TEST</h2>
-                    </div>
-                <div class="column2">
-                    <h4>LONG FORM TEXT</h4>
-                </div>
-                <div class="column3">
-                    <div class="right-date"><h2>12.31.22</h2></div>
-                </div>
-                </div>
+    <div class="post">
+        <div class="row">
+            <div class="column-colap-1">
+                <h2>001</h2>
             </div>
+            <div class="column-colap-2">
+                <h2>Output Title</h2>
+            </div>
+        <div class="column-colap-3">
+            <h4>Text</h4>
+        </div>
+        <div class="column-colap-4">
+            <div class="right-date"><h2>Jan 31, 2022</h2></div>
+        </div>
+        </div>
+    </div>
         </button>
         <div class="content">
             <div class="audio-entry" filename="test.mp3">
@@ -123,19 +139,22 @@
         
         <div class="filterDiv mix">
             <button type="button" class="collapsible">
-            <div class="post">
-                <div class="row">
-                    <div class="column1">
-                        <h2>MIX TEST 2</h2>
-                    </div>
-                <div class="column2">
-                    <h4>LONG FORM TEXT</h4>
-                </div>
-                <div class="column3">
-                    <div class="right-date"><h2>12.231.22</h2></div>
-                </div>
-                </div>
+    <div class="post">
+        <div class="row">
+            <div class="column-colap-1">
+                <h2>001</h2>
             </div>
+            <div class="column-colap-2">
+                <h2>Output Title</h2>
+            </div>
+        <div class="column-colap-3">
+            <h4>Text</h4>
+        </div>
+        <div class="column-colap-4">
+            <div class="right-date"><h2>Jan 31, 2022</h2></div>
+        </div>
+        </div>
+    </div>
         </button>
         <div class="content">
             <div class="audio-entry" filename="test1.mp3">
@@ -151,14 +170,17 @@
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
-            <div class="column1">
-                <h2>OUTPUT TITLE</h2>
+            <div class="column-colap-1">
+                <h2>001</h2>
             </div>
-        <div class="column2">
-            <h4>SHORT FORM TEXT</h4>
+            <div class="column-colap-2">
+                <h2>Output Title</h2>
+            </div>
+        <div class="column-colap-3">
+            <h4>Text</h4>
         </div>
-        <div class="column3">
-            <div class="right-date"><h2>12.31.22</h2></div>
+        <div class="column-colap-4">
+            <div class="right-date"><h2>Jan 31, 2022</h2></div>
         </div>
         </div>
     </div>
@@ -172,14 +194,17 @@
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
-            <div class="column1">
-                <h2>OUTPUT TITLE</h2>
+            <div class="column-colap-1">
+                <h2>001</h2>
             </div>
-        <div class="column2">
-            <h4>LONG FORM TEXT</h4>
+            <div class="column-colap-2">
+                <h2>Output Title</h2>
+            </div>
+        <div class="column-colap-3">
+            <h4>Text</h4>
         </div>
-        <div class="column3">
-            <div class="right-date"><h2>12.31.22</h2></div>
+        <div class="column-colap-4">
+            <div class="right-date"><h2>Jan 31, 2022</h2></div>
         </div>
         </div>
     </div>
@@ -197,14 +222,17 @@
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
-            <div class="column1">
-                <h2>OUTPUT TITLE</h2>
+            <div class="column-colap-1">
+                <h2>001</h2>
             </div>
-        <div class="column2">
-            <h4>GALLERY</h4>
+            <div class="column-colap-2">
+                <h2>Output Title</h2>
+            </div>
+        <div class="column-colap-3">
+            <h4>Text</h4>
         </div>
-        <div class="column3">
-            <div class="right-date"><h2>12.31.22</h2></div>
+        <div class="column-colap-4">
+            <div class="right-date"><h2>Jan 31, 2022</h2></div>
         </div>
         </div>
     </div>
@@ -217,15 +245,15 @@
         
         <div class="column2-type">
         <p4>EVENT POSTER</p4><br>
-        <p2>Jackson O'Leary</p2><br><br>
+        <p>Jackson O'Leary</p><br><br>
         <p4>POSTER SERIES</p4><br>
-        <p2>Carter Teranes</p2><br><br>
+        <p>Carter Teranes</p><br><br>
         <p4>MUSIC</p4><br>
-        <p2>FUCKJACKSON</p2><br>
-        <p2>Lunch</p2><br>
-        <p2>Blyss</p2><br>
-        <p2>Xzanax</p2><br>
-        <p2>Carter Teranes</p2><br><br>
+        <p>FUCKJACKSON</p><br>
+        <p>Lunch</p><br>
+        <p>Blyss</p><br>
+        <p>Xzanax</p><br>
+        <p>Carter Teranes</p><br><br>
         </div>
         </div>
         
@@ -248,82 +276,80 @@
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
-            <div class="column1">
-                <h2>HOME INVASION</h2>
+            <div class="column-colap-1">
+                <h2>001</h2>
             </div>
-        <div class="column2">
-            <h4>PARTY</h4>
+            <div class="column-colap-2">
+                <h2>Home Invasion</h2>
+            </div>
+        <div class="column-colap-3">
+            <h4>Event</h4>
         </div>
-        <div class="column3">
-            <div class="right-date"><h2>12.31.22</h2></div>
+        <div class="column-colap-4">
+            <div class="right-date"><h2>2022</h2></div>
         </div>
         </div>
     </div>
     </button>
-    <div class="content" style="background-color: white;">
+    <div class="content">
         <div class="row">
         <div class="column1-type">
-            <p style="background-color: white;">Debut invasion party in an unsuspecting basement where the acts and audience "broke into" a home to celebrate the new year. A live feed security camera recorded and was played back to the audience, forcing the crowd to look back at themselves. A series of posters with varrying themes and suggestions were created for the event.</p><br>
-        </div>
-        
-        <div class="column2-type"  style="background-color: white;">
-        <p4>EVENT POSTER</p4><br>
-        <p2>Jackson O'Leary</p2><br><br>
-        <p4>POSTER SERIES</p4><br>
-        <p2>Carter Teranes</p2><br><br>
-        <p4>MUSIC</p4><br>
-        <p2>FUCKJACKSON</p2><br>
-        <p2>Lunch</p2><br>
-        <p2>Blyss</p2><br>
-        <p2>Xanakz</p2><br>
-        <p2>Carter Teranes</p2><br><br>
-        <p4>PHOTOS</p4><br>
-        <p2>Ben Werkman</p2><br><br>
-        </div>
-        </div>
-        
-        <div class="gallery-square">
+            
+            <div class="slideshow-container">
+  <div class="mySlides1">
             <img src="imgs/01-home-invasion/NYE_POSTER_FINAL.png" loading="lazy">
-        </div>
-    
-        <div class="gallery-wide">
-            <img src="imgs/01-home-invasion/IMG_3693.jpg" loading="lazy"><p-caption  style="background-color: white;">Live feed security camera recoding and playing back to the audience.</p-caption><br><br>
+  </div>
+
+  <div class="mySlides1">
+    <img src="imgs/01-home-invasion/jersey-nye-mockups-01.png">
+  </div>
+
+  <div class="mySlides1">
+    <img src="imgs/01-home-invasion/jersey-nye-mockups-02.png">
+  </div>
+            
+  <div class="mySlides1">
+    <img src="imgs/01-home-invasion/jersey-nye-mockups-03.png">
+  </div>
+                
+  <div class="mySlides1">
+    <img src="imgs/01-home-invasion/jersey-nye-mockups-04.png">
+  </div>
+                
+  <div class="mySlides1">
+    <img src="imgs/01-home-invasion/jersey-nye-mockups-05.png">
+  </div>
+
+  <div class="mySlides1">
+    <img src="imgs/01-home-invasion/_R000118.jpg">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">Previous</a>
+  <a class="next" onclick="plusSlides(1, 0)">Next</a>
+</div>
+<br>
+            
         </div>
         
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000109.jpg" loading="lazy"><p-caption  style="background-color: white;">FUCKJACKSON</p-caption><br><br> 
-        </div>            
-
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000118.jpg" loading="lazy"><p-caption  style="background-color: white;">FUCKJACKSON</p-caption><br><br>  
-        </div>
-    
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000133.jpg" loading="lazy"><p-caption  style="background-color: white;">Lunch</p-caption><br><br>  
-        </div>
-    
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000174.jpg" loading="lazy"><p-caption  style="background-color: white;">Blyss B2B with Xanakz</p-caption><br><br> 
-        </div>
-
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000154-edit.jpg" loading="lazy"><p-caption  style="background-color: white;">Blyss B2B with Xanakz</p-caption><br><br> 
-        </div>
-
-        <div class="gallery-tall">        
-            <img src="imgs/01-home-invasion/_R000200.jpg" loading="lazy"><p-caption  style="background-color: white;">Carter Teranes</p-caption><br><br>  
+        <div class="column2-type">
+            <p><em>Info</em></p>
+            <p>Debut invasion party in an unsuspecting basement where the acts and audience "broke into" a home to celebrate the new year. A live feed security camera recorded and was played back to the audience, forcing the crowd to look back at themselves. A series of posters with varrying themes and suggestions were created for the event.</p><br>
         </div>
             
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000180.jpg" loading="lazy">
+        <div class="column3-type">
+        <p2><em>Event Poster</em></p2><br>
+        <p>Jackson O'Leary</p><br>
+        <p2><em>Poster Series</em></p2><br>
+        <p>Carter Teranes</p><br>
+        <p2><em>Music</em></p2>
+        <p>FUCKJACKSON</p>
+        <p>Lunch</p>
+        <p>Blyss</p>
+        <p>Xanakz</p>
+        <p>Carter Teranes</p><br>
+        <p2><em>Photos</em></p2><br>
+        <p>Ben Werkman</p><br>
         </div>
-    
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000187.jpg" loading="lazy"> 
-        </div>
-        
-        <div class="gallery-tall">
-            <img src="imgs/01-home-invasion/_R000186.jpg" loading="lazy">  
         </div>
 
         
@@ -331,9 +357,6 @@
         </div>
         
         </div>
-        
-    
-    <br>
     
     
 
@@ -402,30 +425,30 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
     
+    var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+    
 </script>
 
 </div>
         <div class="footer">
-    </div>
-    
-    <!--AUDIO PLAYER -->
-    <div id="aWrap">
-      <!-- (A) PLAY/PAUSE BUTTON -->
-      <button id="aPlay" disabled><span class="aPlayIco" style="color:black" >
-        play_arrow
-      </span></button>
-
-      <!-- (B) TIME -->
-      <div id="aCron">
-        <span id="aNow"></span> / <span id="aTime"></span>
-      </div>
-
-      <!-- (C) SEEK BAR -->
-      <input id="aSeek" type="range" min="0" value="0" step="1" style="width: 300px;" disabled/>
-
-      <!-- (D) VOLUME SLIDE -->
-      <span id="aVolIco" class="material-icons">volume_up</span>
-      <input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" style="width: 80px;" disabled/>
     </div>
 
 </body>

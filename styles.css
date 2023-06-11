@@ -1,17 +1,13 @@
 /* FONTS, TYPE STYLES    */
-@font-face {
-   font-family: MonospaceTypewriter;
-   src: url('fonts/MonospaceTypewriter.woff') format("opentype");
-}
 
 @font-face {
-    font-family: 'tex_gyre_heros_cnregular';
-    src: url('texgyreheroscn-regular-webfont.eot');
-    src: url('texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('texgyreheroscn-regular-webfont.woff2') format('woff2'),
-         url('texgyreheroscn-regular-webfont.woff') format('woff'),
-         url('texgyreheroscn-regular-webfont.ttf') format('truetype'),
-         url('texgyreheroscn-regular-webfont.svg#tex_gyre_heros_cnregular') format('svg');
+    font-family: 'tex_gyre_herosbold';
+    src: url('texgyreheros-bold-webfont.eot');
+    src: url('texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyreheros-bold-webfont.woff2') format('woff2'),
+         url('texgyreheros-bold-webfont.woff') format('woff'),
+         url('texgyreheros-bold-webfont.ttf') format('truetype'),
+         url('texgyreheros-bold-webfont.svg#tex_gyre_herosbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -30,70 +26,50 @@
 
 }
 
-h0{
-    padding: 0px;
-    margin: 0px;
-    font-size: 3.6em;
-    line-height: .8;
-    font-weight: normal;
-   font-family: 'tex_gyre_heros_cnregular';
-    letter-spacing: -1px;
-}
-
-h1{
-    padding: 0px;
-    margin: 0px;
-    font-size: 1.8em;
-    line-height: 1;
-    font-weight: normal;
-   font-family: 'tex_gyre_heros_cnregular';
-    
-}
-
 h2{
     padding: 0px;
     margin: 0px;
-   font-family: 'tex_gyre_heros_cnregular';
-    font-size: 1.2em;
+    font-family: 'tex_gyre_herosregular';
+    font-size: 18px;
     font-weight: normal;
+    line-height: 1.1;
 }
 
 h3{
     padding: 0px;
     margin: 0px;
-   font-family: 'tex_gyre_heros_cnregular';
-    font-size: 1em;
+    font-family: 'tex_gyre_herosregular';
+    font-size: 18px;
     font-weight: normal;
 }
 
 h4{
     padding: 0px;
     margin: 0px;
-   font-family: 'tex_gyre_heros_cnregular';
+    font-family: 'tex_gyre_herosregular';
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: normal;
+    line-height: 1.1;
 }
 
 p{
     padding: 0px;
     margin: 0px;
-    font-size: 1em;
-    line-height: 1.25;
-    max-width: 700px;
+    font-size: 14px;
+    line-height: 1.1;
     font-weight: normal;
-   font-family: 'tex_gyre_herosregular';
-    color: black;
+    font-family: 'tex_gyre_herosregular';
 }
 
 p2{
     padding: 0px;
     margin: 0px;
-    font-size: 1em;
-    line-height: 1.25;
+    font-size: 14px;
+    line-height: 1.1;
     max-width: 700px;
     font-weight: normal;
-   font-family: 'tex_gyre_herosregular';
+    font-family: 'tex_gyre_herosregular';
 }
 
 p4{
@@ -103,7 +79,7 @@ p4{
     line-height: 1.25;
     max-width: 700px;
     font-weight: normal;
-    font-family: 'tex_gyre_heros_cnregular';
+    font-family: 'tex_gyre_herosregular';
     color: black;
 }
 
@@ -114,7 +90,7 @@ p3{
   line-height: 1.25;
     max-width: 700px;
     font-weight: normal;
-    font-family: 'tex_gyre_heros_cnregular';
+    font-family: 'tex_gyre_herosregular';
     color: black;
 }
 
@@ -125,17 +101,16 @@ p-caption{
     line-height: 1.25;
     max-width: 700px;
     font-weight: normal;
-   font-family: 'tex_gyre_herosregular';
+    font-family: 'tex_gyre_herosregular';
     color: black;
     display: inline-block
 }
 
 em{
-font-family: 'BIZ UDMincho', serif;
-font-size: 1.2em;
-font-style: italic;
-letter-spacing: -1px;
-line-height: 0%;
+    font-family: 'tex_gyre_herosbold';
+font-style: normal;
+font-size: 14px;
+    
 }
 
 /* -----------------MEAT-------------------- */
@@ -143,6 +118,13 @@ line-height: 0%;
 body {
     cursor: auto;
     margin: 0;
+}
+
+.header{
+}
+
+.nav {
+    padding: 18px;
 }
 
 top {
@@ -164,38 +146,75 @@ top {
 }
 
 .hero{
-    padding: 0em;
+    padding: 18px;
     margin-top: 0em;
     margin-bottom: 0em;
-    /position: relative;
     max-width: 100%;
-   border-color: black;
+    height: 700px;
+    border-top: solid;
+    border-bottom: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
 }
 
-.header{
-    margin: 0em;
-    margin-bottom: 0;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    border-bottom: 1px solid black;
+* {
+  box-sizing: border-box;
 }
 
+.zoom {
+  padding: 0px;
+  transition: transform 0s;
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 1px 1px .75px rgba(0, 0, 0, 0.3);;
+}
+
+.zoom:hover {
+  -ms-transform: scale(6); /* IE 9 */
+  -webkit-transform: scale(6); /* Safari 3-8 */
+  transform: scale(6); 
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+div.relative {
+  position: relative;
+  width: 100%;
+  height: 468px;
+}
+
+div.absolute1 {
+  position: absolute;
+  left: 18%;
+  top: 40%;
+}
+
+div.absolute2 {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+}
+
+div.absolute3 {
+  position: absolute;
+  left: 60%;
+  top: 45%;
+}
 
 .footer{
-    color: black;
-    padding: 0em;
-    padding-bottom: 3em;
 }
 
 .all{
-    padding: 2em;
+    padding: 0em;
     margin: 0px;
-}
-
-.herotext{
-  max-width: 1440px;
-  padding-right: 2em;
-  padding-bottom: 2em;
 }
 
 .card{
@@ -203,9 +222,42 @@ top {
 }
 
 /* Create three equal columns that floats next to each other */
+
+.column-colap-1 {
+  float: left;
+  width: 10%;
+  padding: 0em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.column-colap-2 {
+  float: left;
+  width: 40%;
+  padding: 0em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.column-colap-3 {
+  float: left;
+  width: 25%;
+  padding: 0em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.column-colap-4 {
+  float: left;
+  width: 25%;
+  padding: 0em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .column1 {
   float: left;
-  width: 60%;
+  width: 50%;
   padding: 0em;
     padding-right: 0px;
     padding-left: 0px;
@@ -213,7 +265,7 @@ top {
 
 .audio-entry {
   float: left;
-  width: 60%;
+  width: 50%;
   padding: 0em;
     padding-right: 0px;
     padding-left: 0px;
@@ -228,21 +280,21 @@ top {
 
 .column2 {
   float: left;
-  width: 20%;
+  width: 25%;
   padding-right: 1em;
     padding-left: 0px;
 }
 
 .column3 {
   float: left;
-  width: 20%;
+  width: 25%;
   padding-right: 1em;
     padding-left: 0px;
 }
 
 .column1-type {
   float: left;
-  width: 60%;
+  width: 50%;
   padding: 0em;
     padding-right: 1em;
     padding-left: 0px;
@@ -251,7 +303,7 @@ top {
 
 .column2-type {
   float: left;
-  width: 20%;
+  width: 25%;
   padding: 0em;
     padding-right: 1em;
     padding-left: 0px;
@@ -260,25 +312,7 @@ top {
 
 .column3-type {
   float: left;
-  width: 20%;
-  padding: 0em;
-    padding-right: 1em;
-    padding-left: 0px;
-    padding-bottom: 1em;
-}
-
-.column-hero-right {
-      float: right;
-  width: 40%;
-  padding: 0em;
-    padding-right: 1em;
-    padding-left: 0px;
-    padding-bottom: 1em;
-}
-
-.column-featured{
-      float: left;
-  width: 50%;
+  width: 25%;
   padding: 0em;
     padding-right: 1em;
     padding-left: 0px;
@@ -303,12 +337,18 @@ top {
   content: "";
   display: table;
   clear: both;
+  height:  auto;
 }
 
 .menu{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin: 0px;
+    padding-left: 18px;
+    padding-right: 18px;
+     padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: gainsboro;
+}
+
+.myBtnContainer{
 }
 
 .body-container {
@@ -341,18 +381,18 @@ img{
 }
 
 .post-last{
+    border-bottom: 0px;
 }
 
 .collapsible {
   cursor: pointer;
   text-align: left;
   width: 100%;
-  padding-top: 1em;
-  padding-left: 0em;
-  padding-right: 0em;
-  padding-bottom: 1em;
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 18px;
   border: none;
-  font-size: 1em;
   border-top: solid;
   border-width: 1px;
   border-color: black;
@@ -360,52 +400,46 @@ img{
   outline: none;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
+    color: gray;
 }
 
 .content {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0em;
-  padding-right: 0em;
+  padding: 18px;
+  padding-top: 0px;
   display: none;
   overflow: hidden;
 }
 
 a {
     color: black;
-}
-
-a:hover {
-    color: black;
     text-decoration: none;
 }
 
+a:hover {
+    color: gray;
+}
+
 .logo {
-    max-width: 300px;
+    float: left;
+    padding: 18px;
 }
 
 .gallery-wide {
-   max-width: 24%;
+   max-width: 24.6%;
    display: inline-block;
-   padding-right:.25em;
-   padding-bottom:.5em;
    vertical-align: top;
 }
 
 .gallery-square {
-   max-width: 24%;
+   max-width: 24.6%;
    display: inline-block;
-   padding-right: .25em;
-   padding-bottom: .5em;
    vertical-align: top;
 }
 
 .gallery-tall {
-   max-width: 24%;
+   max-width: 24.6%;
    display: inline-block;
-   padding-right: .25em;
-   padding-bottom: .5em;
    vertical-align: top;
 }
 
@@ -423,9 +457,6 @@ a:hover {
     }
 }
 @media screen and (max-width: 800px) {
-        h1 {
-        font-size: 1.4em;
-    }
     
     .flex-container > div {
     min-width: 50%;
@@ -434,15 +465,13 @@ a:hover {
     .column1-type {
   float: left;
   width: 100%;
-  padding: .5em;
-    padding-right: .5em;
-    padding-left: 0px;
+  padding: 0;
 }
 
 .column2-type {
   float: left;
   width: 100%;
-  padding: .5em;
+  padding: 0;
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -450,7 +479,7 @@ a:hover {
     .column3-type {
   float: left;
   width: 100%;
-  padding: .5em;
+  padding: 0;
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -466,49 +495,13 @@ a:hover {
     width: 100%;
 }
     
-    .image-column{
-        max-width: 50%;
-    }
-    
-   .gallery-wide {
-   max-width: 100%;
-       padding-bottom: .5em;
-}
-    
-   .gallery-square {
-   max-width: 49%;
-       padding-bottom: .5em;
-}
-
-.gallery-tall {
-   max-width: 49%;
-   padding-bottom: .5em;
-}
-    
 .featured-parent-column{float: left; width: 100%}
     
 }
 @media screen and (max-width: 600px) {
     
     .hero{
-    /height: 600px;
-}
-        #window {
-  width: 200px;
-  left: 53%;
-  top: 10%;
-    }
-    
-        #window2 {
-  width: 150px;
-  left: 43%;
-  top: 58%;
-    }
-    
-        #window3 {
-  width: 200px;
-  left: 5%;
-  top: 33%;
+    height: 600px;
     }
     
     h0 {
@@ -529,9 +522,6 @@ a:hover {
     padding-top: 0px;
   }
     
-    .right-date {
-}
-    
     .flex-container > div {
         min-width: 100%;
         padding: 4px;
@@ -541,31 +531,6 @@ a:hover {
         padding: 0px;
 }
     
-.logo {
-    max-width: 124px;
-}
-    
-    .all{
-    padding: 0em;
-    margin: 1em;
-}
-    
-       .gallery-wide {
-   max-width: 100%;
-       padding-bottom: .5em;
-}
-    
-   .gallery-square {
-   max-width: 49%;
-       padding-bottom: .5em;
-}
-
-.gallery-tall {
-   max-width: 49%;
-   padding-bottom: .5em;
-}
-    img {padding-bottom: .25em;}
-    
 }
 
 /* FILTER */
@@ -574,13 +539,13 @@ a:hover {
   background-color: white;
   border-width: 1px;
   border-color: black;
+  border-style: solid;
   padding: 4px 12px 5px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  color: black;
-  margin-top: 2pt;
+  margin-top: 0;
   border-radius: 100px;
 }
 
@@ -588,9 +553,14 @@ a:hover {
   background-color: black;
   color: white;
 }
+
+.btn.hover {
+    color: gray;
+}
+
 .entries {
   overflow: hidden;
-border-bottom: solid;
+  border-bottom: solid;
   border-width: 1px;
   border-color: black;
 }
@@ -602,4 +572,43 @@ border-bottom: solid;
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
+}
+
+
+
+
+/* SLIDESHOW */
+
+
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: normal;
+  font-size: 24px;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
 }
