@@ -14,6 +14,21 @@
 }
 
 @font-face {
+    font-family: 'tex_gyre_heros_cnbold';
+    src: url('texgyreheroscn-bold-webfont.eot');
+    src: url('texgyreheroscn-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyreheroscn-bold-webfont.woff2') format('woff2'),
+         url('texgyreheroscn-bold-webfont.woff') format('woff'),
+         url('texgyreheroscn-bold-webfont.ttf') format('truetype'),
+         url('texgyreheroscn-bold-webfont.svg#tex_gyre_heros_cnbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
     font-family: 'tex_gyre_herosregular';
     src: url('texgyreheros-regular-webfont.eot');
     src: url('texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -26,98 +41,72 @@
 
 }
 
+html{
+    background-color: white;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'tex_gyre_herosregular';
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: normal;
+}
+
 h2{
     padding: 0px;
     margin: 0px;
     font-family: 'tex_gyre_herosregular';
     font-size: 18px;
     font-weight: normal;
+    color: white;
+    max-width: 800px;
     line-height: 1.1;
 }
 
 h3{
+    font-family: 'tex_gyre_heros_cnbold';
     padding: 0px;
     margin: 0px;
-    font-family: 'tex_gyre_herosregular';
-    font-size: 18px;
+    font-weight: 100;
+    font-size: 96px;
+    line-height: 1;
     font-weight: normal;
-}
-
-h4{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'tex_gyre_herosregular';
-    font-weight: normal;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.1;
+    color: white;
+    letter-spacing: -1px;
 }
 
 p{
     padding: 0px;
     margin: 0px;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.2;
     font-weight: normal;
     font-family: 'tex_gyre_herosregular';
-}
-
-p2{
-    padding: 0px;
-    margin: 0px;
-    font-size: 14px;
-    line-height: 1.1;
-    max-width: 700px;
-    font-weight: normal;
-    font-family: 'tex_gyre_herosregular';
-}
-
-p4{
-    padding: 0px;
-    margin: 0px;
-    font-size: 1em;
-    line-height: 1.25;
-    max-width: 700px;
-    font-weight: normal;
-    font-family: 'tex_gyre_herosregular';
-    color: black;
-}
-
-p3{
-    padding: 0px;
-    margin: 0px;
-    font-size: 1.2em;
-  line-height: 1.25;
-    max-width: 700px;
-    font-weight: normal;
-    font-family: 'tex_gyre_herosregular';
-    color: black;
 }
 
 p-caption{
     padding: 0px;
     margin: 0px;
-    font-size: .75em;
-    line-height: 1.25;
-    max-width: 700px;
+    font-size: 10px;
     font-weight: normal;
     font-family: 'tex_gyre_herosregular';
-    color: black;
+    line-height: 1.2;
     display: inline-block
 }
 
 em{
-    font-family: 'tex_gyre_herosbold';
-font-style: normal;
-font-size: 14px;
-    
+    font-style: normal;
 }
 
 /* -----------------MEAT-------------------- */
 
 body {
     cursor: auto;
-    margin: 0;
+    padding: 18px;
+    margin: 0px;
+    padding-top: 0px;
 }
 
 .header{
@@ -146,16 +135,18 @@ top {
 }
 
 .hero{
-    padding: 18px;
-    margin-top: 0em;
+    margin-top: 0px;
     margin-bottom: 0em;
     max-width: 100%;
-    height: 700px;
-    border-top: solid;
-    border-bottom: solid;
-  border-width: 1px;
-  border-color: black;
-  background-color: white;
+    height: 800px;
+  background-image: url("/imgs/P1010017.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 14px;
+}
+    
 }
 
 * {
@@ -165,16 +156,44 @@ top {
 .zoom {
   padding: 0px;
   transition: transform 0s;
-  width: 50px;
+  width: 100px;
   height: auto;
   margin: 0 auto;
-  box-shadow: 1px 1px .75px rgba(0, 0, 0, 0.3);;
 }
 
+.zoom2 {
+  padding: 0px;
+  transition: transform 0s;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom3 {
+  padding: 0px;
+  transition: transform 0s;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+
 .zoom:hover {
-  -ms-transform: scale(6); /* IE 9 */
-  -webkit-transform: scale(6); /* Safari 3-8 */
-  transform: scale(6); 
+  -ms-transform: scale(4); /* IE 9 */
+  -webkit-transform: scale(4); /* Safari 3-8 */
+  transform: scale(4); 
+}
+
+.zoom2:hover {
+  -ms-transform: scale(8); /* IE 9 */
+  -webkit-transform: scale(8); /* Safari 3-8 */
+  transform: scale(8); 
+}
+
+.zoom3:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); 
 }
 
 .dot {
@@ -188,26 +207,88 @@ top {
 div.relative {
   position: relative;
   width: 100%;
-  height: 468px;
+  height: 800px;
 }
 
 div.absolute1 {
   position: absolute;
-  left: 18%;
-  top: 40%;
+  left: 20%;
+  top: 50%;
+  width: 400px;
 }
 
 div.absolute2 {
+  color: white;
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 20%;
+  max-width: 300px;
+  mix-blend-mode: difference;
 }
 
 div.absolute3 {
+  color: white;
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  max-width: 300px;
+  mix-blend-mode: difference;
+}
+
+div.absolute4 {
+  color: white;
   position: absolute;
   left: 60%;
-  top: 45%;
+  top: 40%;
+  max-width: 300px;
+  mix-blend-mode: difference;
 }
+
+div.absolute5 {
+  position: absolute;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  left: 0px;
+  bottom: 0px;
+/transform: rotate(270deg);
+/transform-origin: 0 0;
+}
+
+div.absolute6 {
+  color: white;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  max-width: 300px;
+  mix-blend-mode: difference;
+}
+
+      .blink {
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+      }
+      .blink2 {
+        animation: blink-animation 1.5s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+      }
+      .blink3 {
+        animation: blink-animation 2s steps(5, start) infinite;
+        -webkit-animation: blink-animation 2s steps(5, start) infinite;
+      }
+      .blink4 {
+        animation: blink-animation 2.5s steps(5, start) infinite;
+        -webkit-animation: blink-animation 2.5s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
 
 .footer{
 }
@@ -225,7 +306,7 @@ div.absolute3 {
 
 .column-colap-1 {
   float: left;
-  width: 10%;
+  width: 40%;
   padding: 0em;
     padding-right: 0px;
     padding-left: 0px;
@@ -233,7 +314,7 @@ div.absolute3 {
 
 .column-colap-2 {
   float: left;
-  width: 40%;
+  width: 20%;
   padding: 0em;
     padding-right: 0px;
     padding-left: 0px;
@@ -241,7 +322,7 @@ div.absolute3 {
 
 .column-colap-3 {
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 0em;
     padding-right: 0px;
     padding-left: 0px;
@@ -249,15 +330,7 @@ div.absolute3 {
 
 .column-colap-4 {
   float: left;
-  width: 25%;
-  padding: 0em;
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
-.column1 {
-  float: left;
-  width: 50%;
+  width: 20%;
   padding: 0em;
     padding-right: 0px;
     padding-left: 0px;
@@ -278,32 +351,18 @@ div.absolute3 {
 /*    filter: invert();*/
 }
 
-.column2 {
-  float: left;
-  width: 25%;
-  padding-right: 1em;
-    padding-left: 0px;
-}
-
-.column3 {
-  float: left;
-  width: 25%;
-  padding-right: 1em;
-    padding-left: 0px;
-}
-
 .column1-type {
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 0em;
-    padding-right: 1em;
+    padding-right: 18px;
     padding-left: 0px;
-    padding-bottom: 1em;
+    padding-bottom: 0px;
 }
 
 .column2-type {
   float: left;
-  width: 25%;
+  width: 40%;
   padding: 0em;
     padding-right: 1em;
     padding-left: 0px;
@@ -312,24 +371,11 @@ div.absolute3 {
 
 .column3-type {
   float: left;
-  width: 25%;
+  width: 15%;
   padding: 0em;
     padding-right: 1em;
     padding-left: 0px;
     padding-bottom: 1em;
-}
-
-.featured-parent-column{float: left; width: 40%}
-
-.body-1{
-    float: left;
-    width: 36%;
-    padding-right:0em;
-}
-
-.body-2{
-    float: left;
-    width: 60%;
 }
 
 /* Clear floats after the columns */
@@ -341,47 +387,18 @@ div.absolute3 {
 }
 
 .menu{
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 0px;
+    padding-right: 0px;
      padding-top: 18px;
     padding-bottom: 18px;
-    background-color: gainsboro;
-}
-
-.myBtnContainer{
-}
-
-.body-container {
-  display: inline-flex;
-  width: 100%;
-  flex-wrap: wrap;
-  padding: 0em;
-}
-
-.image-column{
-    float: left;
-    max-width: 33.33%;
-    padding-right: 1em;
-    padding-bottom: 1em;
-}
-
-.flex-container > div {
-max-width: 25%;
-padding: .25em;
-padding-top: 0px;
+    color: darkgray;
 }
 
 img{
     width: 100%;
     height: auto; 
     display: block;
-}
-
-.post{
-}
-
-.post-last{
-    border-bottom: 0px;
+    border-radius: 14px;
 }
 
 .collapsible {
@@ -389,23 +406,35 @@ img{
   text-align: left;
   width: 100%;
   padding-top: 18px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 18px;
   border: none;
   border-top: solid;
   border-width: 1px;
   border-color: black;
-  background: none;
-  outline: none;
+  background: white;
+  display: block;
+}
+
+.header {
+  text-align: left;
+  width: 100%;
+  padding-top: 18px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 18px;
+  border: none
+  background: white;
+  cursor: default;
 }
 
 .collapsible:hover {
-    color: gray;
+    color: darkgrey;
 }
 
 .content {
-  padding: 18px;
+  padding: 0;
   padding-top: 0px;
   display: none;
   overflow: hidden;
@@ -417,40 +446,11 @@ a {
 }
 
 a:hover {
-    color: gray;
-}
-
-.logo {
-    float: left;
-    padding: 18px;
-}
-
-.gallery-wide {
-   max-width: 24.6%;
-   display: inline-block;
-   vertical-align: top;
-}
-
-.gallery-square {
-   max-width: 24.6%;
-   display: inline-block;
-   vertical-align: top;
-}
-
-.gallery-tall {
-   max-width: 24.6%;
-   display: inline-block;
-   vertical-align: top;
-}
-
-.gallery-container {
+    text-decoration: underline;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
-    h0 {
-        font-size: 3em;
-    }
     
     .flex-container > div {
     min-width: 33.33%;
@@ -484,17 +484,6 @@ a:hover {
     padding-left: 0px;
 }
     
-.body-1{
-    float: left;
-    width: 100%;
-    padding-right: 0em;
-}
-
-.body-2{
-    float: left;
-    width: 100%;
-}
-    
 .featured-parent-column{float: left; width: 100%}
     
 }
@@ -504,23 +493,9 @@ a:hover {
     height: 600px;
     }
     
-    h0 {
-        font-size: 2.6em;
-        letter-spacing: -.8px;
-    }
-    
-    .column1 {
-    width: 50%;
-    padding-bottom: 0px;
-  }
-    .column2 {
-    width: 50%;
-    padding-bottom: 0px;
-  }
-    .column3 {
-    width: 50%;
-    padding-top: 0px;
-  }
+h2{
+    font-size: 16px;
+}
     
     .flex-container > div {
         min-width: 100%;
@@ -531,31 +506,33 @@ a:hover {
         padding: 0px;
 }
     
+    
+    
 }
 
 /* FILTER */
 
 .btn {
-  background-color: white;
-  border-width: 1px;
-  border-color: black;
-  border-style: solid;
-  padding: 4px 12px 5px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 0;
-  border-radius: 100px;
+    margin: 0;
+    cursor: pointer;
+    border-style: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 14px;
 }
 
 .btn.active {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
 
 .btn.hover {
-    color: gray;
 }
 
 .entries {
@@ -599,16 +576,35 @@ img {vertical-align: middle;}
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+    border-style: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 8px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 14px;
   user-select: none;
   font-family: sans-serif;
+  margin-left: 4px;
+  margin-right: 4px;
+    border-radius: 14px;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
+}
+
+
+.player-window{
+    position: fixed; 
+    bottom:18px;
+    right: 18px;
+  z-index: 999;
 }

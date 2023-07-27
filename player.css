@@ -11,7 +11,7 @@
 
 .aPlayIco {
   float: left;
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -33,19 +33,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /position: sticky;
-  /bottom: 0;
-  /left: 0;
-  /right: 0;
-  width: 100%;
+  width: 450px;
   height: 100%;
-    
   /box-sizing: border-box;
-  padding: 0px;
-  background: white;
-  border-top: solid black 1px;
-  
-         
+  padding: 6px;
+  padding-right: 16px;
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* (C) PLAY/PAUSE BUTTON */
@@ -62,7 +56,7 @@
 
 /* (D) TIME */
 #aCron {
-  font-size: 18px;
+  font-size: 12px;
   color: black;
   margin: 0 8px 0 14px;
   min-width: 6em;
@@ -79,6 +73,7 @@
   padding: 0;
   margin: 0;
   background: 0;
+  align-items: center;
 }
 
 #aWrap input[type="range"]::-webkit-slider-thumb {
@@ -89,23 +84,25 @@
 
 /* (E2) CUSTOM SLIDER TRACK */
 #aWrap input[type=range]::-webkit-slider-runnable-track {
-    background: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    height: 36px;
+    border: solid;
+    border-width: .25px;
+    border-color: gray;
+    height: 8px;
+    border-radius: 50px;
 
 }
 #aWrap input[type=range]::-moz-range-track {
 /*  background: #FCFBFA;*/
-    border-style: solid;
-      border-width: 1px;
+    height: 4px;
+    background-color: gainsboro
 }
 
 /* (E3) CUSTOM SLIDER BUTTON */
 #aWrap input[type=range]::-webkit-slider-thumb {
-  width: 18px; height: 100%;
-  border: 0;
+  width: 8px; height: 8px;
   background: black;
+  border-radius: 50px;
+  cursor: pointer;
 }
 #aWrap input[type=range]::-moz-range-thumb {
   width: 16px; height: 16px;
@@ -117,7 +114,7 @@
 /* (F) VOLUME */
 #aVolIco {
   margin: 0 10px;
-      font-size: 24px;
+      font-size: 16px;
   color: #111;
   font-family: 'Material Icons';
 }
