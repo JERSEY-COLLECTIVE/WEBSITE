@@ -6,22 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JERSEY COLLECTIVE</title>
     <link rel="stylesheet" href="/blyss-src/blyss-styles.css">
-    <link rel="stylesheet" href="./player.css"/>
-<!--          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <link rel="stylesheet" href="/blyss-src/player.css"/>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <script defer src="player.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script defer src="/blyss-src/player.js"></script>
   </head>
     
     <body>
         
     <h1> a &#8594 &#8734</h1>
         <div class="entries">
-            <div class="column">
        
+<!--    TODO: CHANGE FILENAME ATTRIBUTES-->
+            <!-- ainf 07 28 23 #27  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 07.28.23 - 28.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>07 28 23 - Coltrane's Mix - blyss </h2> 
+                        </div>   
+                    </div>
+            <br>
+            <!-- ainf 07 14 23 #26  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 07.14.23 - 27.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>07 14 23 - blyss </h2> 
+                        </div>   
+                    </div>
+            <br>
+            <!-- ainf 06 22 23 #26  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 06.22.23 - 26.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>06 22 23 - blyss </h2> 
+                        </div>   
+                    </div>
+            <br>
+                 <!-- Ambient Brunch 06 02 23 #25  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 06.02.23 - 25.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>06 02 23 - blyss </h2> 
+                        </div>   
+                    </div>
+            <br>
+             <!-- Ambient Brunch 04 21 23 #22  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 05.05.23 - 24.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>05 05 23 - blyss </h2> 
+                        </div>   
+                    </div>
+            <br>
+             <!-- Ambient Brunch 04 21 23 #22  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 04.21.23 - 22.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>04 21 23 - blyss </h2> 
+                        </div>   
+                    </div>
+            <br>
+
+            <!-- Ambient Brunch 04 14 23 #21  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 04.14.23 - 21.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>04 14 23 - blyss (special concussion mix)</h2> 
+                        </div>   
+                    </div>
+            <br>
+            
+            <!-- Ambient Brunch 03 19 23 #20a  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/Ambient Brunch - 03.19.23 - 20A.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>03 19 23 - blyss @ Ambient Brunch</h2> 
+                        </div>   
+                    </div>
+            <br>
+            
+            <!-- A.INF #20  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 03.17.23 - 20.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>03 17 23 - blyss x no other day</h2> 
+                        </div>   
+                    </div>
+            <br>
+
+            <!-- A.INF #19  -->
+            <div class="row">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 03.03.23 - 19.mp3">
+                            <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
+                            <h2>03 03 23 - blyss</h2> 
+                        </div>   
+                    </div>
+            <br>
+            
             <!-- A.INF #18  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 02.24.23 - 18.mp3">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 02.24.23 - 18.mp3">
                             <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                             <h2>02 24 23 - blyss</h2> 
                         </div>   
@@ -30,7 +113,7 @@
             
             <!-- A.INF #17  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 02.10.23 - 17.mp3">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 02.10.23 - 17.mp3">
                             <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                             <h2>02 10 23 - blyss</h2> 
                         </div>   
@@ -40,7 +123,7 @@
             <!-- A.INF #16  -->
 
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 02.03.23 - 16.mp3">
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 02.03.23 - 16.mp3">
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                            
                         <h2>02 03 23 - blyss</h2>   
@@ -51,7 +134,7 @@
             <!-- A.INF #15  -->
                
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 01.27.23 - 15.mp3"> 
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 01.27.23 - 15.mp3"> 
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                         
                         <h2>01 27 23 - blyss</h2>   
@@ -61,7 +144,7 @@
                 
             <!-- A.INF #14  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 01.20.23 - 14.mp3">   
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 01.20.23 - 14.mp3">   
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
    
                         <h2>01 20 23 - blyss</h2>    
@@ -71,7 +154,7 @@
         
             <!-- A.INF #13  -->          
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ feat cole_isaac 01.13.23 - 13 .mp3"> 
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ feat cole_isaac 01.13.23 - 13 .mp3"> 
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span> 
                         <h2>01 13 23 - blyss feat. cole & isaac</h2>    
                     </div>
@@ -80,7 +163,7 @@
     
            <!-- A.INF #12  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ otherseas mix 12.20.22 - 12.mp3"> 
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ otherseas mix 12.20.22 - 12.mp3"> 
                            
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
   
@@ -91,7 +174,7 @@
 
            <!-- A.INF #11  -->
             <div class="row">
-                <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 12.13.22 - 11.mp3">                 
+                <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 12.13.22 - 11.mp3">                 
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                         <h2>12 13 22 - blyss</h2>    
                     </div>
@@ -100,7 +183,7 @@
             
             <!-- A.INF #10  -->          
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 12.06.22 - 10.mp3">  
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 12.06.22 - 10.mp3">  
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span> 
                         <h2>12 06 22 - blyss</h2>    
                     </div>
@@ -109,7 +192,7 @@
  
             <!-- A.INF #9  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 11.29.22 - 9.mp3">  
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 11.29.22 - 9.mp3">  
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>  
                         <h2>11 29 22 - blyss</h2>    
                     </div>
@@ -127,7 +210,7 @@
     
             <!-- A.INF #7  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 11.15.22 - 7.mp3.mp3">    
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 11.15.22 - 7.mp3.mp3">    
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                         <h2>11 15 22 - blyss</h2>    
                     </div>
@@ -136,7 +219,7 @@
 
             <!-- A.INF #6  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 11.08.22 - 6.mp3">    
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 11.08.22 - 6.mp3">    
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                         <h2>11 08 22 - blyss</h2>    
                     </div>
@@ -145,7 +228,7 @@
  
             <!-- A.INF #5  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 10.25.22 - 5.mp3">  
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 10.25.22 - 5.mp3">  
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>  
                         <h2>10 25 22 - blyss</h2>    
                     </div>
@@ -154,7 +237,7 @@
  
             <!-- A.INF #4  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 10.18.22 - 4.mp3">    
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 10.18.22 - 4.mp3">    
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span> 
                         <h2>10 18 22 - blyss</h2>    
                     </div>
@@ -163,7 +246,7 @@
  
            <!-- A.INF #3  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 10.11.22 - 3.mp3">   
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 10.11.22 - 3.mp3">   
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                         <h2>10 12 22 - blyss</h2>    
                     </div>
@@ -172,7 +255,7 @@
 
             <!-- A.INF #2  -->
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 09.26.22 - 2.mp3">  
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 09.26.22 - 2.mp3">  
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span> 
                         <h2>09 26 22 - blyss</h2>    
                     </div>
@@ -182,20 +265,13 @@
             <!-- A.INF #1  -->
 
             <div class="row">
-                    <div class="audio-entry" filename="/a-inf-mixes/approaching ∞ 09.19.22 - 1.mp3">  
+                    <div class="audio-entry" filename="/blyss-src/a-inf-mixes/approaching ∞ 09.19.22 - 1.mp3">  
                         <span class="aPlayIco" style="color: white;filter: drop-shadow(0px 0px 3px rgb(167 167 167 / 1));">play_arrow</span>
                         <h2>09 19 22 - blyss</h2>    
                     </div>
             </div>
             <br>
             <br><br><br><br>
-            </div>
-        
-        
-            <div class="column">
-
-                    <object class="tracklist" data="/blyss-src/tracklists/Playlist-for-approaching-∞-2-24-23.html"></object>
-            </div>
         </div>
         
      <!--AUDIO PLAYER -->
@@ -217,7 +293,7 @@
       <span id="aVolIco" class="material-icon">volume_up</span>
       <input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" disabled/>
     </div>
-    </body>
+        </body>
     
     
 <script>
