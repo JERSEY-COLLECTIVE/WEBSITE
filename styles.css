@@ -403,6 +403,7 @@ img{
   border-color: black;
   background: transparent;
   display: block;
+  border-bottom: 0px;
 }
 
 
