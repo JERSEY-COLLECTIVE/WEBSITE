@@ -1,652 +1,981 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JERSEY COLLECTIVE</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./player.css"/>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./player.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <script defer src="player.js"></script>
-      
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-    
-<body>
-<div class="all">
 
-<div class="header">
-    <div class="post">
-        <div class="row">
+  <body>
+    <div class="all">
+      <div class="header">
+        <div class="post">
+          <div class="row">
             <div class="column-colap-1">
-                <img src="imgs/jersey-test-logo.png" style="height: 18px; width: auto; align: left; border-radius: 0px;">
+              <img
+                src="imgs/jersey-test-logo.png"
+                style="
+                  height: 18px;
+                  width: auto;
+                  align: left;
+                  border-radius: 0px;
+                "
+              />
             </div>
             <div class="column-colap-2">
-                <h1><a href="https://discord.gg/6BmFvAj8">Discord</a></h1>
+              <h1><a href="https://discord.gg/6BmFvAj8">Discord</a></h1>
             </div>
-        <div class="column-colap-3">
-            <h1><a href="https://www.instagram.com/jersey.collective/">Instagram</a></h1>
+            <div class="column-colap-3">
+              <h1>
+                <a href="https://www.instagram.com/jersey.collective/"
+                  >Instagram</a
+                >
+              </h1>
+            </div>
+            <div class="column-colap-4">
+              <div class="right-date">
+                <h1>
+                  <a href="mailto:jerseycollective.contact@gmail.com">Email</a>
+                </h1>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1><a href="mailto:jerseycollective.contact@gmail.com">Email</a></h1></div>
+      </div>
+
+      <div class="hero">
+        <div class="absolute2">
+          <div class="blink">
+            <h1>+</h1>
+            <h2>
+              Blyss is live every Friday at 11:00 AM EST on
+              <a href="https://discord.gg/yGNvm6XE" style="color: white">
+                wcbn.org</a
+              >
+            </h2>
+          </div>
         </div>
+        <div class="absolute3">
+          <div class="blink2">
+            <h1>+</h1>
+            <h2>Photo: Judi at B.Y.O. USB, Beer, Blankets</h2>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <div class="menu" style="padding-left: 0px; padding-bottom: 0px">
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">
+            <p>Show all</p>
+          </button>
+          <button class="btn" onclick="filterSelection('mix')">
+            <p>Mix</p>
+          </button>
+          <button class="btn" onclick="filterSelection('art')">
+            <p>Art</p>
+          </button>
+          <button class="btn" onclick="filterSelection('event')">
+            <p>Event</p>
+          </button>
+          <button class="btn" onclick="filterSelection('zine')">
+            <p>Zine</p>
+          </button>
         </div>
-    
-    <div class="hero">
-                <div class="absolute2">
-                    <div class="blink"><h1>+</h1><h2>Blyss is live every Friday at 11:00 AM EST on <a href="https://discord.gg/yGNvm6XE" style=" color: white;"> wcbn.org</a></h2></div>
+      </div>
+      <div class="menu">
+        <div class="post">
+          <div class="row">
+            <div class="column-colap-1">
+              <p-caption>Title</p-caption>
+            </div>
+            <div class="column-colap-2">
+              <p-caption>Type</p-caption>
+            </div>
+            <div class="column-colap-3">
+              <p-caption>Creator</p-caption>
+            </div>
+            <div class="column-colap-4">
+              <p-caption>Year</p-caption>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="entries">
+        <div class="filterDiv art">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>latte crudo</h1>
                 </div>
-                <div class="absolute3">
-                    <div class="blink2"><h1>+</h1><h2>Photo: Judi at B.Y.O. USB, Beer, Blankets</h2></div>
+                <div class="column-colap-2">
+                  <h1>Art</h1>
                 </div>
-    </div>
-            
-<div class="menu" style="padding-left: 0px; padding-bottom: 0px;">
-<div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"><p>Show all</p></button>
-  <button class="btn" onclick="filterSelection('mix')"> <p>Mix</p></button>
-    <button class="btn" onclick="filterSelection('art')"><p>Art</p></button>
-  <button class="btn" onclick="filterSelection('event')"><p>Event</p></button>
-  <button class="btn" onclick="filterSelection('zine')"><p>Zine</p></button>
-</div>
-    </div>
-    <div class="menu">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <p-caption>Title</p-caption>
+                <div class="column-colap-3">
+                  <h1>Multiple</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
+              </div>
             </div>
-            <div class="column-colap-2">
-                <p-caption>Type</p-caption>
-            </div>
-        <div class="column-colap-3">
-            <p-caption>Creator</p-caption>
-        </div>
-        <div class="column-colap-4">
-            <p-caption>Year</p-caption>
-        </div>
-        </div>
-    </div>
-    </div>
-    
-    <div class="entries">  
-        
-     <div class="filterDiv art">
-            <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>latte crudo</h1>
-            </div>
-            <div class="column-colap-2">
-                <h1>Art</h1>
-            </div>
-        <div class="column-colap-3">
-            <h1>Multiple</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-        </button>
-        <div class="content">
+          </button>
+          <div class="content">
             <div class="row">
-        <div class="column1-type">
-            <img src="/imgs/latte-crudo/lc1.jpg">
-            
-        </div>
-        
-        <div class="column2-type">
-             <p>7/11</p>
-        </div>
-            
-        <div class="column3-type">
-        </div>
-        </div>
-
-              </div>
+              <div class="column1-type">
+                <img src="/imgs/latte-crudo/lc1.jpg" />
               </div>
 
-        
-            <div class="filterDiv mix">
-            <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>Audio Placeholder</h1>
+              <div class="column2-type">
+                <p>7/11</p>
+              </div>
+
+              <div class="column3-type"></div>
             </div>
-            <div class="column-colap-2">
-                <h1>Mix</h1>
+          </div>
+        </div>
+
+        <div class="filterDiv mix">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>Audio Placeholder</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Mix</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>N/A</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
+              </div>
             </div>
-        <div class="column-colap-3">
-            <h1>N/A</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-        </button>
-        <div class="content">
+          </button>
+          <div class="content">
             <div class="row">
-        <div class="column1-type">
-            <audio controls>
-                <source src="/audio/test.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-            </audio>
-        </div>
-        
-        <div class="column2-type">
-             <p>Lorem Ipsum</p>
-        </div>
-            
-        <div class="column3-type">
-        </div>
+              <div class="column1-type">
+                <audio controls>
+                  <source src="/audio/test.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <div class="column2-type">
+                <p>Lorem Ipsum</p>
+              </div>
+
+              <div class="column3-type"></div>
+            </div>
+          </div>
         </div>
 
+        <div class="filterDiv mix">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>approaching ∞ #28 - 07 28 - Coltrane's Mix</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Mix</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>blyss</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
               </div>
-    </div> 
-        
-    <div class="filterDiv mix">
-            <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>approaching ∞ #28 - 07 28 - Coltrane's Mix</h1>
             </div>
-            <div class="column-colap-2">
-                <h1>Mix</h1>
-            </div>
-        <div class="column-colap-3">
-            <h1>blyss</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-        </button>
-        <div class="content">
+          </button>
+          <div class="content">
             <div class="row">
-        <div class="column1-type">
-            <audio controls>
-                <source src="/a-inf-mixes/approaching ∞ 07.28.23 - 28.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-            </audio>
-        </div>
-        
-        <div class="column2-type">
-             <p> Coltrane's birthday mix, celebrating their life and the long-anticipated release of the 4th installment in the Pikmin franchise, Pikmin 4</p>
-        </div>
-            
-        <div class="column3-type">
-            <p><a href="https://spinitron.com/WCBN/pl/17674818/approaching">tracklist</a></p>
-        </div>
-        </div>
-
+              <div class="column1-type">
+                <audio controls>
+                  <source
+                    src="/a-inf-mixes/approaching ∞ 07.28.23 - 28.mp3"
+                    type="audio/mpeg"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
               </div>
-    </div> 
-     <div class="filterDiv mix">
-            <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>approaching ∞ #27 - 07 14</h1>
+
+              <div class="column2-type">
+                <p>
+                  Coltrane's birthday mix, celebrating their life and the
+                  long-anticipated release of the 4th installment in the Pikmin
+                  franchise, Pikmin 4
+                </p>
+              </div>
+
+              <div class="column3-type">
+                <p>
+                  <a href="https://spinitron.com/WCBN/pl/17674818/approaching"
+                    >tracklist</a
+                  >
+                </p>
+              </div>
             </div>
-            <div class="column-colap-2">
-                <h1>Mix</h1>
+          </div>
+        </div>
+        <div class="filterDiv mix">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>approaching ∞ #27 - 07 14</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Mix</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>blyss</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
+              </div>
             </div>
-        <div class="column-colap-3">
-            <h1>blyss</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-        </button>
-        <div class="content">
+          </button>
+          <div class="content">
             <div class="row">
-        <div class="column1-type">
-            <audio controls>
-                <source src="/a-inf-mixes/approaching ∞ 07.14.23 - 27.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-            </audio>
-        </div>
-        
-        <div class="column2-type">
-             <p>sunny as fuck schmix</p>
-        </div>
-            
-        <div class="column3-type">
-        </div>
+              <div class="column1-type">
+                <audio controls>
+                  <source
+                    src="/a-inf-mixes/approaching ∞ 07.14.23 - 27.mp3"
+                    type="audio/mpeg"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <div class="column2-type">
+                <p>sunny as fuck schmix</p>
+              </div>
+
+              <div class="column3-type"></div>
+            </div>
+          </div>
         </div>
 
+        <div class="filterDiv art">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>40000</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Art</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>blyss</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
               </div>
-    </div> 
-        
-    <div class="filterDiv art">
-            <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>40000</h1>
             </div>
-            <div class="column-colap-2">
-                <h1>Art</h1>
-            </div>
-        <div class="column-colap-3">
-            <h1>blyss</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-        </button>
-        <div class="content">
+          </button>
+          <div class="content">
             <div class="row">
-        <div class="column1-type">
-            <img src="/imgs/40000/40000.png">
-            
-        </div>
-        
-        <div class="column2-type">
-             <p>alt: no alternative</p>
-        </div>
-            
-        <div class="column3-type">
-        </div>
-            </div>
+              <div class="column1-type">
+                <img src="/imgs/40000/40000.png" />
               </div>
-    </div> 
-        
-    <div class="filterDiv mix">
-            <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>Dj Kids Meal and Friends - 7/7/23</h1>
-            </div>
-            <div class="column-colap-2">
-                <h1>Mix</h1>
-            </div>
-        <div class="column-colap-3">
-            <h1>Multiple</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-        </button>
-        <div class="content">
-                    <div class="row">
-        <div class="column1-type">
-            
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VrgYEA0leuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
-            
-        </div>
-        
-        <div class="column2-type">
-        </div>
-            
-        <div class="column3-type">
-        </div>
-        </div>
 
+              <div class="column2-type">
+                <p>alt: no alternative</p>
               </div>
-            </div>  
-          
-    <div class="filterDiv event">
-        <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>B.Y.O. USB, Beer, Blanket</h1>
+
+              <div class="column3-type"></div>
             </div>
-            <div class="column-colap-2">
-                <h1>Event</h1>
+          </div>
+        </div>
+
+        <div class="filterDiv mix">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>Dj Kids Meal and Friends - 7/7/23</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Mix</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>Multiple</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
+              </div>
             </div>
-        <div class="column-colap-3">
-            <h1>Multiple</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-    </button>
-    <div class="content">
-        <div class="row">
-        <div class="column1-type">
-            
-            <div class="slideshow-container">
-            
-<a class="prev" onclick="plusSlides(-1, 1)">&larr;</a>
-  <a class="next" onclick="plusSlides(1, 1)">&rarr;</a>
-                
-  <div class="mySlides2">
-    <img src="imgs/02-byo/byousb-summer-jersey-party-poster.png">
-  </div>
+          </button>
+          <div class="content">
+            <div class="row">
+              <div class="column1-type">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VrgYEA0leuI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <br />
+              </div>
 
-  <div class="mySlides2">
-    <img src="imgs/02-byo/A0000687.JPG">
-  </div>
-            
-  <div class="mySlides2">
-    <img src="imgs/02-byo/A0000691.JPG">
-  </div>
-                
-  <div class="mySlides2">
-    <img src="imgs/02-byo/A0000654.jpg">
-  </div>
+              <div class="column2-type"></div>
 
-</div>
-<br>
-            
-    <video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-            
-        </div>
-        
-        <div class="column2-type">
-            <p>Daytime open air, open decks on the most beautiful day ever.</p><br>
-        </div>
-            
-        <div class="column3-type">
-        <p><a href="https://carterteranes.com/">Carter</a></p><br>
-        <p>Faulkner</p>
-        <p>Jackson</p>
-        <p>Jacob</p>
-        <p>Dove</p>
-        <p>GG</p><br>
-        <p>Ben</p>
-        <p>Nick</p><br>
-        </div>
-        </div>
-
-        
-        </div>
-    </div>
-
-    <div class="filterDiv zine">
-        <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>PHOTOGRAPHY ZINE</h1>
+              <div class="column3-type"></div>
             </div>
-            <div class="column-colap-2">
-                <h1>Zine</h1>
+          </div>
+        </div>
+
+        <div class="filterDiv event">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>B.Y.O. USB, Beer, Blanket</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Event</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>Multiple</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
+              </div>
             </div>
-        <div class="column-colap-3">
-            <h1>Jackson O'Leary</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-    </button>
-    <div class="content">
-        <div class="row">
-        <div class="column1-type">
-            
-            <div class="slideshow-container">
-            
-<a class="prev" onclick="plusSlides(-1, 2)">&larr;</a>
-  <a class="next" onclick="plusSlides(1, 2)">&rarr;</a>
-                
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8965.jpg">
-  </div>
-                
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8963.jpg">
-  </div>                
-                
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8987.jpg">
-  </div>
-            
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8966.jpg">
-  </div>
-                
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8982.jpg">
-  </div>
-                
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8992.jpg">
-  </div>
+          </button>
+          <div class="content">
+            <div class="row">
+              <div class="column1-type">
+                <div class="slideshow-container">
+                  <a class="prev" onclick="plusSlides(-1, 1)">&larr;</a>
+                  <a class="next" onclick="plusSlides(1, 1)">&rarr;</a>
 
-</div>
-<br>
-            
-        </div>
-        
-        <div class="column2-type">
-        </div>
-            
-        <div class="column3-type">
-        </div>
-        </div>
+                  <div class="mySlides2">
+                    <img
+                      src="imgs/02-byo/byousb-summer-jersey-party-poster.png"
+                    />
+                  </div>
 
-        
-        </div>
-    </div>
-        
-    <div class="filterDiv zine">
-        <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>Sooner or Later</h1>
+                  <div class="mySlides2">
+                    <img src="imgs/02-byo/A0000687.JPG" />
+                  </div>
+
+                  <div class="mySlides2">
+                    <img src="imgs/02-byo/A0000691.JPG" />
+                  </div>
+
+                  <div class="mySlides2">
+                    <img src="imgs/02-byo/A0000654.jpg" />
+                  </div>
+                </div>
+                <br />
+
+                <video width="320" height="240" controls>
+                  <source src="movie.mp4" type="video/mp4" />
+                  <source src="movie.ogg" type="video/ogg" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="column2-type">
+                <p>
+                  Daytime open air, open decks on the most beautiful day ever.
+                </p>
+                <br />
+              </div>
+
+              <div class="column3-type">
+                <p><a href="https://carterteranes.com/">Carter</a></p>
+                <br />
+                <p>Faulkner</p>
+                <p>Jackson</p>
+                <p>Jacob</p>
+                <p>Dove</p>
+                <p>GG</p>
+                <br />
+                <p>Ben</p>
+                <p>Nick</p>
+                <br />
+              </div>
             </div>
-            <div class="column-colap-2">
-                <h1>Zine</h1>
+          </div>
+        </div>
+
+        <div class="filterDiv zine">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>PHOTOGRAPHY ZINE</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Zine</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>Jackson O'Leary</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
+              </div>
             </div>
-        <div class="column-colap-3">
-            <h1>Ben Werkman</h1>
-        </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2023</h1></div>
-        </div>
-        </div>
-    </div>
-    </button>
-    <div class="content">
-        <div class="row">
-        <div class="column1-type">
-           <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Co-jefAO4ga/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Co-jefAO4ga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Co-jefAO4ga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ben Werkman (@benjiwerk)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script> 
-<br>
-            
-        </div>
-        
-        <div class="column2-type">
-            <p><em>Info</em></p>
-            <p></p><br>
-        </div>
-            
-        <div class="column3-type">
-            <p>Ben Werkman</p><br>
-        </div>
-        </div>
+          </button>
+          <div class="content">
+            <div class="row">
+              <div class="column1-type">
+                <div class="slideshow-container">
+                  <a class="prev" onclick="plusSlides(-1, 2)">&larr;</a>
+                  <a class="next" onclick="plusSlides(1, 2)">&rarr;</a>
 
-        
-        </div>
-    </div>
-    
-    <div class="filterDiv event">
-        <button type="button" class="collapsible">
-    <div class="post">
-        <div class="row">
-            <div class="column-colap-1">
-                <h1>Home Invasion</h1>
+                  <div class="mySlides3">
+                    <img src="imgs/03-jxn-zine/IMG_8965.jpg" />
+                  </div>
+
+                  <div class="mySlides3">
+                    <img src="imgs/03-jxn-zine/IMG_8963.jpg" />
+                  </div>
+
+                  <div class="mySlides3">
+                    <img src="imgs/03-jxn-zine/IMG_8987.jpg" />
+                  </div>
+
+                  <div class="mySlides3">
+                    <img src="imgs/03-jxn-zine/IMG_8966.jpg" />
+                  </div>
+
+                  <div class="mySlides3">
+                    <img src="imgs/03-jxn-zine/IMG_8982.jpg" />
+                  </div>
+
+                  <div class="mySlides3">
+                    <img src="imgs/03-jxn-zine/IMG_8992.jpg" />
+                  </div>
+                </div>
+                <br />
+              </div>
+
+              <div class="column2-type"></div>
+
+              <div class="column3-type"></div>
             </div>
-            <div class="column-colap-2">
-                <h1>Event</h1>
+          </div>
+        </div>
+
+        <div class="filterDiv zine">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>Sooner or Later</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Zine</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>Ben Werkman</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2023</h1></div>
+                </div>
+              </div>
             </div>
-        <div class="column-colap-3">
-            <h1>Multiple</h1>
+          </button>
+          <div class="content">
+            <div class="row">
+              <div class="column1-type">
+                <blockquote
+                  class="instagram-media"
+                  data-instgrm-captioned
+                  data-instgrm-permalink="https://www.instagram.com/p/Co-jefAO4ga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  data-instgrm-version="14"
+                  style="
+                    background: #fff;
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                      0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                    margin: 1px;
+                    max-width: 540px;
+                    min-width: 326px;
+                    padding: 0;
+                    width: 99.375%;
+                    width: -webkit-calc(100% - 2px);
+                    width: calc(100% - 2px);
+                  "
+                >
+                  <div style="padding: 16px">
+                    <a
+                      href="https://www.instagram.com/p/Co-jefAO4ga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      style="
+                        background: #ffffff;
+                        line-height: 0;
+                        padding: 0 0;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 100%;
+                      "
+                      target="_blank"
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                        "
+                      >
+                        <div
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 40px;
+                            margin-right: 14px;
+                            width: 40px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                            justify-content: center;
+                          "
+                        >
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              margin-bottom: 6px;
+                              width: 100px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              width: 60px;
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                      <div style="padding: 19% 0"></div>
+                      <div
+                        style="
+                          display: block;
+                          height: 50px;
+                          margin: 0 auto 12px;
+                          width: 50px;
+                        "
+                      >
+                        <svg
+                          width="50px"
+                          height="50px"
+                          viewBox="0 0 60 60"
+                          version="1.1"
+                          xmlns="https://www.w3.org/2000/svg"
+                          xmlns:xlink="https://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(-511.000000, -20.000000)"
+                              fill="#000000"
+                            >
+                              <g>
+                                <path
+                                  d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div style="padding-top: 8px">
+                        <div
+                          style="
+                            color: #3897f0;
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 550;
+                            line-height: 18px;
+                          "
+                        >
+                          View this post on Instagram
+                        </div>
+                      </div>
+                      <div style="padding: 12.5% 0"></div>
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-bottom: 14px;
+                          align-items: center;
+                        "
+                      >
+                        <div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 50%;
+                              height: 12.5px;
+                              width: 12.5px;
+                              transform: translateX(0px) translateY(7px);
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              height: 12.5px;
+                              transform: rotate(-45deg) translateX(3px)
+                                translateY(1px);
+                              width: 12.5px;
+                              flex-grow: 0;
+                              margin-right: 14px;
+                              margin-left: 2px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 50%;
+                              height: 12.5px;
+                              width: 12.5px;
+                              transform: translateX(9px) translateY(-18px);
+                            "
+                          ></div>
+                        </div>
+                        <div style="margin-left: 8px">
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 50%;
+                              flex-grow: 0;
+                              height: 20px;
+                              width: 20px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              width: 0;
+                              height: 0;
+                              border-top: 2px solid transparent;
+                              border-left: 6px solid #f4f4f4;
+                              border-bottom: 2px solid transparent;
+                              transform: translateX(16px) translateY(-4px)
+                                rotate(30deg);
+                            "
+                          ></div>
+                        </div>
+                        <div style="margin-left: auto">
+                          <div
+                            style="
+                              width: 0px;
+                              border-top: 8px solid #f4f4f4;
+                              border-right: 8px solid transparent;
+                              transform: translateY(16px);
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              flex-grow: 0;
+                              height: 12px;
+                              width: 16px;
+                              transform: translateY(-4px);
+                            "
+                          ></div>
+                          <div
+                            style="
+                              width: 0;
+                              height: 0;
+                              border-top: 8px solid #f4f4f4;
+                              border-left: 8px solid transparent;
+                              transform: translateY(-4px) translateX(8px);
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          flex-grow: 1;
+                          justify-content: center;
+                          margin-bottom: 24px;
+                        "
+                      >
+                        <div
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            margin-bottom: 6px;
+                            width: 224px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            width: 144px;
+                          "
+                        ></div></div
+                    ></a>
+                    <p
+                      style="
+                        color: #c9c8cd;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        line-height: 17px;
+                        margin-bottom: 0;
+                        margin-top: 8px;
+                        overflow: hidden;
+                        padding: 8px 0 7px;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                      "
+                    >
+                      <a
+                        href="https://www.instagram.com/p/Co-jefAO4ga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        style="
+                          color: #c9c8cd;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: normal;
+                          line-height: 17px;
+                          text-decoration: none;
+                        "
+                        target="_blank"
+                        >A post shared by Ben Werkman (@benjiwerk)</a
+                      >
+                    </p>
+                  </div>
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+                <br />
+              </div>
+
+              <div class="column2-type">
+                <p><em>Info</em></p>
+                <p></p>
+                <br />
+              </div>
+
+              <div class="column3-type">
+                <p>Ben Werkman</p>
+                <br />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="column-colap-4">
-            <div class="right-date"><h1>2022</h1></div>
+
+        <div class="filterDiv event">
+          <button type="button" class="collapsible">
+            <div class="post">
+              <div class="row">
+                <div class="column-colap-1">
+                  <h1>Home Invasion</h1>
+                </div>
+                <div class="column-colap-2">
+                  <h1>Event</h1>
+                </div>
+                <div class="column-colap-3">
+                  <h1>Multiple</h1>
+                </div>
+                <div class="column-colap-4">
+                  <div class="right-date"><h1>2022</h1></div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="content">
+            <div class="row">
+              <div class="column1-type">
+                <div class="slideshow-container">
+                  <a class="prev" onclick="plusSlides(-1, 0)">&larr;</a>
+                  <a class="next" onclick="plusSlides(1, 0)">&rarr;</a>
+
+                  <div class="mySlides1">
+                    <img
+                      src="imgs/01-home-invasion/NYE_POSTER_FINAL.png"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="mySlides1">
+                    <img src="imgs/01-home-invasion/_R000118.jpg" />
+                  </div>
+                </div>
+                <br />
+              </div>
+
+              <div class="column2-type">
+                <p><em>Info</em></p>
+                <p>
+                  Debut invasion party in an unsuspecting basement where the
+                  acts and audience "broke into" a home to celebrate the new
+                  year. A live feed security camera recorded and was played back
+                  to the audience, forcing the crowd to look back at themselves.
+                  A series of posters with varrying themes and suggestions were
+                  created for the event.
+                </p>
+                <br />
+              </div>
+
+              <div class="column3-type">
+                <p><em>Event Poster</em></p>
+                <p>
+                  <a href="https://jacksonoleary.com/Pages/Index.html"
+                    >Jackson O'Leary</a
+                  >
+                </p>
+                <br />
+                <p><em>Poster Series</em></p>
+                <p>Carter Teranes</p>
+                <br />
+                <p><em>Music</em></p>
+                <p>FUCKJACKSON</p>
+                <p>Lunch</p>
+                <p>Blyss</p>
+                <p>Xanakz</p>
+                <p>Carter Teranes</p>
+                <br />
+                <p><em>Photos</em></p>
+                <p>Ben Werkman</p>
+                <br />
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+
+        filterSelection("all");
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+              element.className += " " + arr2[i];
+            }
+          }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+
+        var slideIndex = [1, 1, 2];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+
+        function plusSlides(n, no) {
+          showSlides((slideIndex[no] += n), no);
+        }
+
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {
+            slideIndex[no] = 1;
+          }
+          if (n < 1) {
+            slideIndex[no] = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex[no] - 1].style.display = "block";
+        }
+      </script>
     </div>
-    </button>
-    <div class="content">
-        <div class="row">
-        <div class="column1-type">
-            
-            <div class="slideshow-container">
-            
-<a class="prev" onclick="plusSlides(-1, 0)">&larr;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&rarr;</a>
-                
-  <div class="mySlides1">
-            <img src="imgs/01-home-invasion/NYE_POSTER_FINAL.png" loading="lazy">
-  </div>
-  <div class="mySlides1">
-    <img src="imgs/01-home-invasion/_R000118.jpg">
-  </div>
-</div>
-<br>
-            
-        </div>
-        
-        <div class="column2-type">
-            <p><em>Info</em></p>
-            <p>Debut invasion party in an unsuspecting basement where the acts and audience "broke into" a home to celebrate the new year. A live feed security camera recorded and was played back to the audience, forcing the crowd to look back at themselves. A series of posters with varrying themes and suggestions were created for the event.</p><br>
-        </div>
-            
-        <div class="column3-type">
-        <p><em>Event Poster</em></p>
-        <p><a href="https://jacksonoleary.com/Pages/Index.html">Jackson O'Leary</a></p><br>
-        <p><em>Poster Series</em></p>
-        <p>Carter Teranes</p><br>
-        <p><em>Music</em></p>
-        <p>FUCKJACKSON</p>
-        <p>Lunch</p>
-        <p>Blyss</p>
-        <p>Xanakz</p>
-        <p>Carter Teranes</p><br>
-        <p><em>Photos</em></p>
-        <p>Ben Werkman</p><br>
-        </div>
-        </div>
-
-        
-        </div>
-        </div>
-        
-    </div>
-    
-    
-
-<script>
-    
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-    
-    filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-    
-    var slideIndex = [1,1,2];
-var slideId = ["mySlides1", "mySlides2", "mySlides3"]
-showSlides(1, 0);
-showSlides(1, 1);
-showSlides(1, 2);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-    
-</script>
-
-</div>
-
-</body>
+  </body>
 </html>
