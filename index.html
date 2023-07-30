@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JERSEY COLLECTIVE</title>
+    <title>jersey</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./player.css"/>
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -23,7 +23,7 @@
     <div class="post">
         <div class="row">
             <div class="column-colap-1">
-                <img src="imgs/jersey-test-logo.png" style="height: 18px; width: auto; align: left; border-radius: 0px;">
+                <img src="imgs/jersey-test-logo.png" style="height: 18px; width: auto; align: left; margin-bottom: 0;">
             </div>
             <div class="column-colap-2">
                 <h1><a href="https://discord.gg/6BmFvAj8">Discord</a></h1>
@@ -46,17 +46,37 @@
                     <div class="blink2"><h1>+</h1><h2>Photo: Judi at B.Y.O. USB, Beer, Blankets</h2></div>
                 </div>
     </div>
-            
+
 <div class="menu" style="padding-left: 0px; padding-bottom: 0px;">
-<div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"><p>Show all</p></button>
-  <button class="btn" onclick="filterSelection('mix')"> <p>Mix</p></button>
-    <button class="btn" onclick="filterSelection('art')"><p>Art</p></button>
-  <button class="btn" onclick="filterSelection('event')"><p>Event</p></button>
-  <button class="btn" onclick="filterSelection('zine')"><p>Zine</p></button>
-</div>
+    
+<!-- Filter for "Type" -->  
+<div class="filter">
+        <label for="filter-select"><p>Type:</p></label>
+       <select id="filter-select" onchange="filterSelection()">
+            <option value="all">Show all</option>
+            <option value="mix">Mix</option>
+            <option value="art">Art</option>
+            <option value="event">Event</option>
+            <option value="zine">Zine</option>
+        </select>
     </div>
-    <div class="menu">
+
+<!-- Filter for "Creator" --> 
+    <div class="filter">
+        <label for="category-select"><p>Creator:</p></label>
+        <select id="category-select" onchange="filterSelection()">
+            <option value="all">Show all</option>
+            <option value="blyss">blyss</option>
+            <option value="jackson">Jackson</option>
+            <option value="ben">Ben</option>
+            <option value="amman">Amman</option>
+            <option value="multiple">Multiple</option>
+            <!-- Add more category options as needed -->
+        </select>
+    </div>
+    
+    </div>
+    <div class="descriptors">
     <div class="post">
         <div class="row">
             <div class="column-colap-1">
@@ -154,7 +174,7 @@
               </div>
     </div> 
         
-    <div class="filterDiv mix">
+    <div class="filterDiv mix blyss">
             <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -193,7 +213,8 @@
 
               </div>
     </div> 
-     <div class="filterDiv mix">
+        
+     <div class="filterDiv mix blyss">
             <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -232,7 +253,7 @@
               </div>
     </div> 
         
-    <div class="filterDiv art">
+    <div class="filterDiv art blyss">
             <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -269,7 +290,7 @@
               </div>
     </div> 
         
-    <div class="filterDiv mix">
+    <div class="filterDiv mix multiple">
             <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -307,7 +328,7 @@
               </div>
             </div>  
           
-    <div class="filterDiv event">
+    <div class="filterDiv event multiple">
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -336,27 +357,25 @@
   <a class="next" onclick="plusSlides(1, 1)">&rarr;</a>
                 
   <div class="mySlides2">
-    <img src="imgs/02-byo/byousb-summer-jersey-party-poster.png">
+    <img src="imgs/byo/byousb-summer-jersey-party-poster.png">
   </div>
 
   <div class="mySlides2">
-    <img src="imgs/02-byo/A0000687.JPG">
+    <img src="imgs/byo/A0000687.JPG">
   </div>
             
   <div class="mySlides2">
-    <img src="imgs/02-byo/A0000691.JPG">
+    <img src="imgs/byo/A0000691.JPG">
   </div>
                 
   <div class="mySlides2">
-    <img src="imgs/02-byo/A0000654.jpg">
+    <img src="imgs/byo/A0000654.jpg">
   </div>
 
 </div>
-<br>
             
-    <video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
+    <video width="100%" height="auto" controls>
+  <source src="/video/MOV_8602.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
             
@@ -367,14 +386,6 @@ Your browser does not support the video tag.
         </div>
             
         <div class="column3-type">
-        <p><a href="https://carterteranes.com/">Carter</a></p><br>
-        <p>Faulkner</p>
-        <p>Jackson</p>
-        <p>Jacob</p>
-        <p>Dove</p>
-        <p>GG</p><br>
-        <p>Ben</p>
-        <p>Nick</p><br>
         </div>
         </div>
 
@@ -382,7 +393,7 @@ Your browser does not support the video tag.
         </div>
     </div>
 
-    <div class="filterDiv zine">
+    <div class="filterDiv zine jackson">
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -407,31 +418,28 @@ Your browser does not support the video tag.
             
             <div class="slideshow-container">
             
-<a class="prev" onclick="plusSlides(-1, 2)">&larr;</a>
-  <a class="next" onclick="plusSlides(1, 2)">&rarr;</a>
+<a class="prev" onclick="plusSlides(-1, 0)">&larr;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&rarr;</a>
+
                 
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8965.jpg">
-  </div>
-                
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8963.jpg">
+  <div class="mySlides1">
+    <img src="imgs/jxn-zine/IMG_8963.jpg">
   </div>                
                 
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8987.jpg">
+  <div class="mySlides1">
+    <img src="imgs/jxn-zine/IMG_8987.jpg">
   </div>
             
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8966.jpg">
+  <div class="mySlides1">
+    <img src="imgs/jxn-zine/IMG_8966.jpg">
   </div>
                 
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8982.jpg">
+  <div class="mySlides1">
+    <img src="imgs/jxn-zine/IMG_8982.jpg">
   </div>
                 
-  <div class="mySlides3">
-    <img src="imgs/03-jxn-zine/IMG_8992.jpg">
+  <div class="mySlides1">
+    <img src="imgs/jxn-zine/IMG_8992.jpg">
   </div>
 
 </div>
@@ -450,7 +458,7 @@ Your browser does not support the video tag.
         </div>
     </div>
         
-    <div class="filterDiv zine">
+    <div class="filterDiv zine ben">
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -478,12 +486,9 @@ Your browser does not support the video tag.
         </div>
         
         <div class="column2-type">
-            <p><em>Info</em></p>
-            <p></p><br>
         </div>
             
         <div class="column3-type">
-            <p>Ben Werkman</p><br>
         </div>
         </div>
 
@@ -491,7 +496,7 @@ Your browser does not support the video tag.
         </div>
     </div>
     
-    <div class="filterDiv event">
+    <div class="filterDiv event multiple">
         <button type="button" class="collapsible">
     <div class="post">
         <div class="row">
@@ -514,40 +519,26 @@ Your browser does not support the video tag.
         <div class="row">
         <div class="column1-type">
             
-            <div class="slideshow-container">
-            
-<a class="prev" onclick="plusSlides(-1, 0)">&larr;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&rarr;</a>
-                
-  <div class="mySlides1">
-            <img src="imgs/01-home-invasion/NYE_POSTER_FINAL.png" loading="lazy">
-  </div>
-  <div class="mySlides1">
-    <img src="imgs/01-home-invasion/_R000118.jpg">
-  </div>
-</div>
-<br>
+<img src="/imgs/home-invasion/NYE_POSTER_FINAL.png">
             
         </div>
         
         <div class="column2-type">
             <p><em>Info</em></p>
-            <p>Debut invasion party in an unsuspecting basement where the acts and audience "broke into" a home to celebrate the new year. A live feed security camera recorded and was played back to the audience, forcing the crowd to look back at themselves. A series of posters with varrying themes and suggestions were created for the event.</p><br>
+            <p>Invasion party in an unsuspecting basement where the acts and audience "broke into" a home to celebrate the new year. A live feed security camera recorded and was played back to the audience, forcing the crowd to look back at themselves.</p><br>
         </div>
             
         <div class="column3-type">
         <p><em>Event Poster</em></p>
         <p><a href="https://jacksonoleary.com/Pages/Index.html">Jackson O'Leary</a></p><br>
-        <p><em>Poster Series</em></p>
-        <p>Carter Teranes</p><br>
         <p><em>Music</em></p>
         <p>FUCKJACKSON</p>
         <p>Lunch</p>
         <p>Blyss</p>
         <p>Xanakz</p>
-        <p>Carter Teranes</p><br>
+        <p>Carter</p><br>
         <p><em>Photos</em></p>
-        <p>Ben Werkman</p><br>
+        <p>Ben Werkman<br>
         </div>
         </div>
 
@@ -576,15 +567,22 @@ for (i = 0; i < coll.length; i++) {
   });
 }
     
-    filterSelection("all")
-function filterSelection(c) {
+// Function to filter elements based on the selected options from the drop-down menus
+function filterSelection() {
   var x, i;
+  var selectedType = document.getElementById("filter-select").value;
+  var selectedCategory = document.getElementById("category-select").value;
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    
+    var typeMatches = selectedType === "all" || x[i].classList.contains(selectedType);
+    var categoryMatches = selectedCategory === "all" || x[i].classList.contains(selectedCategory);
+    
+    if (typeMatches && categoryMatches) {
+      w3AddClass(x[i], "show");
+    }
   }
 }
 
@@ -594,7 +592,7 @@ function w3AddClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
+    if (arr1.indexOf(arr2[i]) === -1) {
       element.className += " " + arr2[i];
     }
   }
@@ -613,18 +611,13 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// Set default state to show all content elements on page load
+window.onload = function() {
+  filterSelection();
+};
+
     
-    var slideIndex = [1,1,2];
+    var slideIndex = [1,1,1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 showSlides(1, 0);
 showSlides(1, 1);
