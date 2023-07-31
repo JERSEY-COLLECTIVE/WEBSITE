@@ -215,10 +215,10 @@ div.absolute1 {
 div.absolute2 {
   color: white;
   position: absolute;
-  left: 50%;
-  top: 20%;
+  left: 80%;
+  top: 10%;
   max-width: 300px;
-  mix-blend-mode: difference;
+/*  mix-blend-mode: difference;*/
 }
 
 div.absolute3 {
