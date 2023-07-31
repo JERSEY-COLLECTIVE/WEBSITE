@@ -12,7 +12,7 @@ let widthDelta = 1;
 var sWidth = 10;
 
 function setup() {
-  var myCanvas = createCanvas(windowWidth, 200);
+  var myCanvas = createCanvas(windowWidth-100, 200);
   myCanvas.parent("cum-slot");
     
   noStroke();
