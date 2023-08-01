@@ -302,7 +302,7 @@ div.absolute6 {
   float: left;
   width: 40%;
   padding: 0em;
-    padding-right: 0px;
+    padding-right: 12px;
     padding-left: 0px;
 }
 
@@ -576,22 +576,22 @@ img {vertical-align: middle;}
   top: 50%;
   width: auto;
     border-style: none;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 10px;
-    padding-right: 8px;
-    background-color: rgba(0, 0, 0, 0.3);
-    /border-style: solid;
-    /border-width: 1px;
-    /border-color: black;
-  margin-top: -22px;
+  margin-top: -18px;
   color: white;
-  font-size: 21px;
   user-select: none;
-     font-family: 'NotCourierSans';
   margin-left: 4px;
   margin-right: 4px;
     border-radius: 0px;
+    height: auto;
+    margin-bottom: 0 !important;
+}
+
+.next:hover{
+    opacity: 90%;
+}
+
+.prev:hover{
+    opacity: 90%;
 }
 
 /* Position the "next button" to the right */
