@@ -94,7 +94,6 @@ p-caption{
     font-family: 'NotCourierSans';
     line-height: 1.2;
     display: inline-block;
-    opacity: 50%;
 }
 
 em{
@@ -387,6 +386,7 @@ div.absolute6 {
     padding-right: 0px;
      padding-top: 32px;
     padding-bottom: 8px;
+    opacity: 50%;
 }
 
 img{
@@ -586,10 +586,9 @@ img {vertical-align: middle;}
     /border-color: black;
   margin-top: -22px;
   color: white;
-  font-weight: normal;
   font-size: 21px;
   user-select: none;
-  font-family: sans-serif;
+     font-family: 'NotCourierSans';
   margin-left: 4px;
   margin-right: 4px;
     border-radius: 0px;
