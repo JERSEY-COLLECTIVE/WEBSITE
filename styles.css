@@ -505,7 +505,7 @@ a:hover {
 
 #filter-select{
     margin-left: 6px;
-            background-color: white; padding-top: 3px; padding-bottom: 3px; padding-left: 4px; display: inline-block; color:black; border-radius:60px; border: solid;
+    background-color: white; padding-top: 3px; padding-bottom: 3px; padding-left: 4px;display: inline-block; color:black; border-radius:60px; border: solid;
   border-width: 1px;
   border-color: black;
 font-size: 14px;
