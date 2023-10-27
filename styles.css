@@ -733,6 +733,14 @@ background-color: black;
   border-color: blue;
 }
 
+.a-button-carter{
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: white; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 8px; display: inline-block; color:magenta; border-radius:60px; border: solid;
+  border-width: 1px;
+  border-color: magenta;
+}
+
 .a-button-hero{
     background-color: white; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 8px; display: inline-block; color:black; border-radius:60px; margin-top: 8px;
 }
@@ -745,6 +753,11 @@ background-color: black;
 .a-button-blyss:hover{
 color: white;
 background-color: blue;
+}
+
+.a-button-carter:hover{
+color: white;
+background-color: magenta;
 }
 
 .outputs {
