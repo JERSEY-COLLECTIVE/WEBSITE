@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}  
+
+/* For mobile: */
+.grid-container {
+    position: absolute;
+    top: 5%;
+    display: grid;
+    column-gap: 5%;
+    grid-auto-columns: 95%;
+}
+
+.item2 { grid-area: 1 / 1 / 1 / 1; text-align: center;}
+.item1 { grid-area: 2 / 1 / 3 / 1;}
+.item3m { grid-area: 4 / 1 / 4 / 1;}
+.item3 { display:none;}
+
+
+.map-img {
+    height:40%; 
+    width:auto;
+    position: absolute;
+    bottom: -7%;
+    right: -20%;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:azure;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+timer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:azure;
+    font-size: 32px;
+}
+
+
+
+
+/* For Desktop: */
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        position: absolute;
+        /* top: 15%; */
+        display: grid;
+        column-gap: 5%;
+        grid-auto-columns: 30%;
+        grid-auto-rows:20%;
+    }
+
+    .item1 { grid-area: 1 / 1 / 3 / 1; }
+    .item2 { grid-area: 2 / 2 / 3 / 2; text-align: center;}
+    .item3 { grid-area: 3 / 3 / 3 / 3; display: unset;}
+    .item3m { display:none;} /* hide on desktop*/
+
+    h1 {
+        color: azure;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color:azure;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    timer {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color:azure;
+        font-size: 42px;
+    }
+
+    .map-img {
+        height:50%; 
+        width:auto;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+}
+
+
+
+body {
+    background-color: #1d1d1d;
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+img {
+    z-index:-1;
+}
+
+h2 {
+    color: azure;
+}
+
+p {
+    color:azure;
+}
+
+a {
+    color: cyan;
+}
+

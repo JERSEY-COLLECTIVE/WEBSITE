@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <!--                  sets vp width == device.     default zoom level -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nye25/nye.css">
+    <script defer src="/nye25/countdown.js"></script>
+
+    </head>
+
+
+    <body>
+    <img class="bottomleft" src="/nye25/fits-example.png" alt="fits" height="60%" width="70%" >
+    <img class="map-img" src="/nye25/gr-map.png" alt="fits">
+    
+    <div class="grid-container" position="">
+        <div class="item1">
+            <h2>rules</h2>
+            <p>CLASSIFIED is an event organized by Jersey Collective to celebrate the unstoppable march of time and all the love and community that we experience during it. Here are a couple of ground rules we have to ensure everyone has a good time while staying safe:
+            <br><br>
+            <b>NO CREEPS, NO ASSHOLES -</b>
+            This is a party for everyone, except the creeps. We do not tolerate racism, homophobia, misogyny and general creepiness. If you’re found to be one of these things, you will be told to leave the party. If someone makes you uncomfortable, find us on the floor or at the door and we’ll handle it.
+            <br><br>
+            <b>NO PHOTOS, NO PHONES -</b>
+            Being on your phone and taking photos, especially with flash, ruins the dance floor and damages the environment of the party. Stay off your phone.
+            <br><br>
+            <b>RESPECT THE SPACE -</b>
+            We’re all guests here. Treat this space like your home. Underground venues are few and far between in this city. If you’re found disrespecting the space, you will be told to leave.
+            </p>
+        </div>
+        <div class="item2">
+            <h1 text-align="center">address drops 12.30.24 @ 11:59:59 </h1>
+            <timer id="demo"></timer>
+        </div>
+        <div class="item3">
+            <h2>lore</h2>
+            <p>
+            As I was falling asleep I imagined another alien species. Their planet has a super dense, almost water-like, gaseous atmosphere that is constantly being stirred up by seismic & climate events. This causes a lot of fast, strong waves/currents/“wind” that propagate and collide and combine in the “air.” 
+            <br><br>
+            The atmosphere is saturated w a ton of loose organic molecules, even some very basic Protozoa type single cell shit. Despite there being an abundance of nutrients and such, the constant tempest and clashing waves in the air make it difficult for more complex life to develop.
+            <br><br>   
+            Over time, however, a very specialized kind of lifeform came into being. When the conditions are right, two especially strong wavefronts gather up an excess of organic matter and collide with each other at full speed. The force of the impact smushes the organic matter into one cohesive ‘paste’, and for a fleeting moment that paste is living as one distinct species, before the receding current & aftershocks again shred it to pieces.
+            <br><br>     
+            Through the accumulated microseconds of millions of impacts, the lifeforms evolved to exist completely in those split-second moments. They devote all of their resources to maximizing the conscious awareness granted in those moments: as such, they assemble an intricate and powerful nervous system. So strong, in fact, that in their lifetime they transmit billions of high-amperage electrical impulses which appears externally like bright flashes of lightning at the crests of the waves. To optimize further, the pieces left behind after a collision ended became more modular; almost like arms, legs, heads, hands were ready to come together when the waves crashed. 
+            <br><br>
+            Last year at NYE our shit was so bumping that between the beats these alien species were flashing in and out of life. Like strobe lights or sparks on an anvil
+            </p>
+        </div>
+        <div class="item3m">
+        <p><a href="https://www.jerseyworld.io/nye25/lore" target="_blank"><h2>jersey internal affairs: report</h2></a></p>
+        </div>
+    </div>
+    
+    </body></html>
