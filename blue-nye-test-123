@@ -14,9 +14,9 @@
     
     <div class="grid-container" position="">
         <div class="item1">
-            <h2>rules</h2>
-            <p>CLASSIFIED is an event organized by Jersey Collective to celebrate the unstoppable march of time and all the love and community that we experience during it. Here are a couple of ground rules we have to ensure everyone has a good time while staying safe:
-            <br><br>
+            <h2>open and read each of the policies below to access address information</h2>
+            <!-- <p>CLASSIFIED is an event organized by Jersey Collective to celebrate the unstoppable march of time and all the love and community that we experience during it. Here are a couple of ground rules we have to ensure everyone has a good time while staying safe: -->
+            <!-- <br><br> -->
             <button type="button" class="hide-button">NO CREEPS, NO ASSHOLES &#x21B4 </button>
             <rule>This is a party for everyone, except the creeps. We do not tolerate racism, homophobia, misogyny and general creepiness. If you’re found to be one of these things, you will be told to leave the party. If someone makes you uncomfortable, find us on the floor or at the door and we’ll handle it.</rule>
             <br><br>
@@ -27,7 +27,7 @@
             <rule>We’re all guests here. Treat this space like your home. Underground venues are few and far between in this city. If you’re found disrespecting the space, you will be told to leave.</rule>
             </p>
         </div>
-        <div class="item2">
+        <div class="item2" id="address">
             <h1 text-align="center">address drops 12.30.24 @ 23:59:59 </h1>
             <timer id="demo"></timer>
         </div>
@@ -53,22 +53,31 @@
     <script>
         // if (window.innerwidth < 768) { may work, but too lazy to try rn.
         var coll = document.getElementsByClassName("hide-button");
+        var addy = document.getElementById("address");
         var i;
-        
+        var r = 0;
+    
             for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("touchend", function() {
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                            if (content.style.display === "block") {
-                            content.style.display = "none";
-                            } else {
-                            content.style.display = "block";
-                            } 
-                    });
-                }
-            //}
-        
-        
+                coll[i].addEventListener("touchend", function() {                      
+                    
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                        content.style.display = "none";
+                        r = r-1;
+                        } else {
+                        content.style.display = "block";
+                        r = r + 1;
+                        } 
+                    console.log(r)
+                    if (r >= 3){
+                        addy.style.display = "block"
+                    } else {
+                        addy.style.display = "none";
+                    }
+                });
+
+            }
         
     </script>
     
