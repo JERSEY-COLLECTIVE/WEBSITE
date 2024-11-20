@@ -9,26 +9,26 @@
 
 
     <body>
-    <img class="bottomleft" src="/nye25/fits-example.png" alt="fits" height="60%" width="70%" >
-    <img class="map-img" src="/nye25/gr-map.png" alt="fits">
+    <img class="fits-img" src="/nye25/fits-example.png" alt="fits" z-index="-2" >
+    <img class="map-img" src="/nye25/gr-map.png" alt="map" z-index="-1">
     
     <div class="grid-container" position="">
         <div class="item1">
             <h2>rules</h2>
             <p>CLASSIFIED is an event organized by Jersey Collective to celebrate the unstoppable march of time and all the love and community that we experience during it. Here are a couple of ground rules we have to ensure everyone has a good time while staying safe:
             <br><br>
-            <b>NO CREEPS, NO ASSHOLES -</b>
-            This is a party for everyone, except the creeps. We do not tolerate racism, homophobia, misogyny and general creepiness. If you’re found to be one of these things, you will be told to leave the party. If someone makes you uncomfortable, find us on the floor or at the door and we’ll handle it.
+            <button type="button" class="hide-button">NO CREEPS, NO ASSHOLES &#x21B4 </button>
+            <rule>This is a party for everyone, except the creeps. We do not tolerate racism, homophobia, misogyny and general creepiness. If you’re found to be one of these things, you will be told to leave the party. If someone makes you uncomfortable, find us on the floor or at the door and we’ll handle it.</rule>
             <br><br>
-            <b>NO PHOTOS, NO PHONES -</b>
-            Being on your phone and taking photos, especially with flash, ruins the dance floor and damages the environment of the party. Stay off your phone.
+            <button type="button" class="hide-button">NO PHOTOS, NO PHONES &#x21B4 </button>
+            <rule>Being on your phone and taking photos, especially with flash, ruins the dance floor and damages the environment of the party. Stay off your phone.</rule>
             <br><br>
-            <b>RESPECT THE SPACE -</b>
-            We’re all guests here. Treat this space like your home. Underground venues are few and far between in this city. If you’re found disrespecting the space, you will be told to leave.
+            <button type="button" class="hide-button">RESPECT THE SPACE &#x21B4 </button>
+            <rule>We’re all guests here. Treat this space like your home. Underground venues are few and far between in this city. If you’re found disrespecting the space, you will be told to leave.</rule>
             </p>
         </div>
         <div class="item2">
-            <h1 text-align="center">address drops 12.30.24 @ 11:59:59 </h1>
+            <h1 text-align="center">address drops 12.30.24 @ 23:59:59 </h1>
             <timer id="demo"></timer>
         </div>
         <div class="item3">
@@ -50,4 +50,27 @@
         </div>
     </div>
     
-    </body></html>
+    <script>
+        // if (window.innerwidth < 768) { may work, but too lazy to try rn.
+        var coll = document.getElementsByClassName("hide-button");
+        var i;
+        
+            for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("touchend", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                            content.style.display = "none";
+                            } else {
+                            content.style.display = "block";
+                            } 
+                    });
+                }
+            //}
+        
+        
+        
+    </script>
+    
+    </body>
+    </html>

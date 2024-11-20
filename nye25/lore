@@ -2,13 +2,13 @@
     <head>
     <!--                  sets vp width == device.     default zoom level -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./nye25.css">
+    <link rel="stylesheet" href="/nye25/nye.css">
 
     </head>
 
 
     <body>
-    <img class="bottomleft" src="/nye/fits-example.png" alt="fits" height="60%" width="70%" >
+    <img class="fits-img" src="/nye25/fits-example.png" alt="fits" z-index="-1" >
     <h2>lore</h2>
     <p>
     As I was falling asleep I imagined another alien species. Their planet has a super dense, almost water-like, gaseous atmosphere that is constantly being stirred up by seismic & climate events. This causes a lot of fast, strong waves/currents/“wind” that propagate and collide and combine in the “air.” 
@@ -21,6 +21,8 @@
     <br><br>
     Last year at NYE our shit was so bumping that between the beats these alien species were flashing in and out of life. Like strobe lights or sparks on an anvil
     </p>
+
+    <a href="https://www.jerseyworld.io/blue-nye-test-123" target="_blank"><h2>back</h2></a>
     </div>
     
     </body></html>
