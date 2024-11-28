@@ -13,9 +13,6 @@
   box-sizing: border-box;
 }
 
-html {
-}
-
 body {
   background-color: black;
   color: white;
@@ -41,7 +38,26 @@ body {
   animation: scroll-sun linear;
   -webkit-animation: scroll-sun linear;
   animation-timeline: scroll(root y);
+  -webkit-animation-timeline: scroll(root y);
   align-self: flex-end;
+}
+
+@keyframes scroll-sun {
+  from {
+    transform: scale(125%);
+  }
+  to {
+    transform: scale(1%);
+  }
+}
+
+@-webkit-keyframes scroll-sun {
+  from {
+    transform: scale(125%);
+  }
+  to {
+    transform: scale(1%);
+  }
 }
 
 p {
@@ -91,6 +107,11 @@ h3 {
   text-transform: uppercase;
 }
 
+#invite {
+  animation: blink 1s linear infinite;
+  -webkit-animation: blink 1s linear infinite;
+}
+
 #address {
   display: none;
   animation: blink 1s linear infinite;
@@ -106,24 +127,6 @@ h3 {
 @-webkit-keyframes blink {
   to {
     color: black;
-  }
-}
-
-@keyframes scroll-sun {
-  from {
-    transform: scale(125%);
-  }
-  to {
-    transform: scale(1%);
-  }
-}
-
-@-webkit-keyframes scroll-sun {
-  from {
-    transform: scale(125%);
-  }
-  to {
-    transform: scale(1%);
   }
 }
 
@@ -150,6 +153,10 @@ h3 {
 
 .hide-button:hover {
   cursor: pointer;
+}
+
+.hide-content {
+  display: none;
 }
 
 .lore p,
