@@ -1,11 +1,12 @@
 @font-face {
-  font-family: "Univers", Helvetica, sans-serif;
+  font-family: "Univers", -apple-system, BlinkMacSystemFont, sans-serif;
   src: url("/fonts/UniversRegular.woff");
 }
 
 @font-face {
-  font-family: "Univers Condensed", Helvetica, sans-serif;
-  src: url("/fonts/universcondensed_bold.ttf");
+  font-family: "Univers Condensed", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  src: url("/fonts/UniversCnBold.woff");
   font-weight: bold;
 }
 
