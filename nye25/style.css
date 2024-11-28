@@ -191,10 +191,30 @@ h3 {
   }
 
   .sun {
-    width: 850px;
-    height: 850px;
-    left: calc((100vw - 850px) / 2);
+    width: 900px;
+    height: 900px;
+    left: calc((100vw - 900px) / 2);
+    /* animation: scroll-sun-mobile 1s linear 1; */
+    /* -webkit-animation: scroll-sun-mobile 1s linear 1; */
   }
+
+  /* @keyframes scroll-sun-mobile {
+    from {
+      transform: scale(calc(125% * (1 - var(--scroll))));
+    }
+    to {
+      transform: scale(calc(1% * (1 - var(--scroll))));
+    }
+  }
+
+  @-webkit-keyframes scroll-sun-mobile {
+    from {
+      transform: scale(calc(125% * (1 - var(--scroll))));
+    }
+    to {
+      transform: scale(calc(1% * (1 - var(--scroll))));
+    }
+  } */
 
   .grid-container {
     width: 100%;

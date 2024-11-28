@@ -59,6 +59,16 @@
         var i;
         var r = 0;
 
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset / (3000 - window.innerHeight));
+        }, false);
+
+        window.onscroll(() => {
+            if (window.innerWidth > 600) return;
+            var sun = document.getElementsByClassName('sun')[0];
+            sun.style.setProperty('transform', "scale(calc(100 * (1 - var(--scroll))))");
+        });
+
         for (i = 0; i < coll.length; i++) {
 
             coll[i].addEventListener("click", function() {        // can this be reduced? or...         https://stackoverflow.com/questions/45947570/how-to-attach-an-event-listener-to-the-dom-depending-upon-the-screen-size
