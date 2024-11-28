@@ -1,11 +1,10 @@
 @font-face {
-  font-family: "Univers", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Univers";
   src: url("/fonts/UniversRegular.woff");
 }
 
 @font-face {
-  font-family: "Univers Condensed", -apple-system, BlinkMacSystemFont,
-    sans-serif;
+  font-family: "Univers Condensed";
   src: url("/fonts/UniversCnBold.woff");
   font-weight: bold;
 }
@@ -17,7 +16,9 @@
 body {
   background-color: black;
   color: white;
-  font-family: "Univers Condensed";
+  font-family: "Univers Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
   text-align: center;
   font-size: 16px;
   margin: 0px;
@@ -63,7 +64,8 @@ body {
 
 p {
   mix-blend-mode: exclusion;
-  font-family: "Univers";
+  font-family: "Univers", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
 }
 
