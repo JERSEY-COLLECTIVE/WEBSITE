@@ -63,10 +63,10 @@
             document.body.style.setProperty('--scroll', window.pageYOffset / (3000 - window.innerHeight));
         }, false);
 
-        window.onscroll(() => {
-            if (window.innerWidth > 600) return;
+        window.onscroll = (() => {
+            if (window.innerWidth > 1024) return;
             var sun = document.getElementsByClassName('sun')[0];
-            sun.style.setProperty('transform', "scale(calc(100 * (1 - var(--scroll))))");
+            sun.style.transform = "scale(calc(100% * (1 - var(--scroll))))";
         });
 
         for (i = 0; i < coll.length; i++) {

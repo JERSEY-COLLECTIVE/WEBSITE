@@ -17,7 +17,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: "Univers Condensed", sans-serif;
+  font-family: "Univers Condensed";
   text-align: center;
   font-size: 16px;
   margin: 0px;
@@ -63,7 +63,7 @@ body {
 
 p {
   mix-blend-mode: exclusion;
-  font-family: "Univers", sans-serif;
+  font-family: "Univers";
   margin: 0;
 }
 
