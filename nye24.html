@@ -1,0 +1,89 @@
+<html>
+    <head>
+    <!--                  sets vp width == device.     default zoom level -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nye25/style.css">
+    <script defer src="nye25/countdown.js"></script>
+
+    </head>
+
+
+    <body>
+    
+    <img class="sun" src="nye25/sun.svg" />
+    <div class="grid-container">
+        <div class="item1" id="info">
+            <h1>you are invited<br>jersey nye 2024</h1>
+            <h2>please review all  the following information</h2>
+            <h2>invite required for entry</h2>
+            <h2>21+ | BYOB | $15 suggested donation</h2>
+            <br>
+        </div>
+        <div class="item3" id="address">
+            <h2 text-align="center">address drops 12/30/24 @ 23:59:59 </h2>
+            <h1 class="timer" id="demo"></h1>
+            <br>
+        </div>
+        <div class="item2" id="rules">
+            <h3>Rules</h3>
+            <p>open and read each of the policies below to access address information</p>
+            <h2 class="hide-button">1<br>NO CREEPS, NO ASSHOLES</h2>
+            <p class="hide-content">This is a party for everyone, except the creeps. We do not tolerate racism, homophobia, misogyny and general creepiness. If you're found to be one of these things, you will be told to leave the party. If someone makes you uncomfortable, find us on the floor or at the door and we'll handle it.</p>
+            <h2 class="hide-button">2<br>NO PHOTOS, NO PHONES</h2>
+            <p class="hide-content">Being on your phone and taking photos, especially with flash, ruins the dance floor and damages the environment of the party. Stay off your phone.</p>
+            <h2 class="hide-button">3<br>RESPECT    THE SPACE</h2>
+            <p class="hide-content">We're all guests here. Treat this space like your home. Underground venues are few and far between in this city. If you're found disrespecting the space, you will be told to leave.</p>
+            </p>
+        </div>
+        <div class="item4" id="lore">
+            <p>As I was falling asleep I imagined another alien species. Their planet has a super dense, almost water-like, gaseous atmosphere that is constantly being stirred up by seismic & climate events. This causes a lot of fast, strong waves/currents/“wind” that propagate and collide and combine in the “air.” 
+            <br><br>
+            The atmosphere is saturated w a ton of loose organic molecules, even some very basic Protozoa type single cell shit. Despite there being an abundance of nutrients and such, the constant tempest and clashing waves in the air make it difficult for more complex life to develop.
+            <br><br>   
+            Over time, however, a very specialized kind of lifeform came into being. When the conditions are right, two especially strong wavefronts gather up an excess of organic matter and collide with each other at full speed. The force of the impact smushes the organic matter into one cohesive 'paste', and for a fleeting moment that paste is living as one distinct species, before the receding current & aftershocks again shred it to pieces.
+            <br><br>     
+            Through the accumulated microseconds of millions of impacts, the lifeforms evolved to exist completely in those split-second moments. They devote all of their resources to maximizing the conscious awareness granted in those moments: as such, they assemble an intricate and powerful nervous system. So strong, in fact, that in their lifetime they transmit billions of high-amperage electrical impulses which appears externally like bright flashes of lightning at the crests of the waves. To optimize further, the pieces left behind after a collision ended became more modular; almost like arms, legs, heads, hands were ready to come together when the waves crashed. 
+            <br><br>
+            Last year at NYE our shit was so bumping that between the beats these alien species were flashing in and out of life. Like strobe lights or sparks on an anvil.
+            </p>
+        </div>
+        <img class="map-img" src="nye25/gr-map.png" alt="map" z-index="-1">
+        <div class="item4m" id="lore-url">
+            <a href="/nye25/lore.html" target="_blank">CLICK ME</a> <!--lore easter egg for mobile-->
+        </div>
+    </div>
+    
+    <script>
+        var coll = document.getElementsByClassName("hide-button");
+        var addy = document.getElementById("address");
+        var i;
+        var r = 0;
+
+        for (i = 0; i < coll.length; i++) {
+
+            coll[i].addEventListener("click", function() {        // can this be reduced? or...         https://stackoverflow.com/questions/45947570/how-to-attach-an-event-listener-to-the-dom-depending-upon-the-screen-size
+                
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                var icon = content.childNodes[0];
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    r = r-1;
+                } else {
+                    content.style.display = "block";
+                    r = r + 1;
+                } 
+
+                if (r >= 3){
+                    addy.style.display = "block"
+                } else {
+                    addy.style.display = "none";
+                }
+            });
+
+        }
+        
+    </script>
+    
+    </body>
+    </html>
