@@ -60,9 +60,10 @@
         var addy = document.getElementById("address");
         var i;
         var r = 0;
+        var container = document.getElementsByClassName("grid-container")[0];
 
         window.addEventListener('scroll', () => {
-            document.body.style.setProperty('--scroll', window.pageYOffset / (3000 - window.innerHeight));
+            document.body.style.setProperty('--scroll', window.pageYOffset / (container.offsetHeight - window.innerHeight));
         }, false);
 
         window.onscroll = (() => {
