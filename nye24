@@ -35,7 +35,7 @@
             </p>
         </div>
         <div class="item3" id="address">
-            <h2>address drops 12/31/24 @ 12:00 </h2>
+            <h2>address drops 12/31/24 @ 12:00 pm</h2>
             <h1 class="timer" id="demo"></h1>
             <h2>invite card required at door</h2>
             <br>
@@ -43,7 +43,7 @@
         <div class="item4" id="lore">
             <p>                A sense of movement seeped into- making me aware of- my dream. It was slow, but it made me dizzy because it felt vast. As if I could suddenly feel the spinning of the whole earth around the sun. 
                 <br><br>
-                    Eventually it stopped and I was awake. It wasn't a jolt, but more like the measured docking of a barge. My room was filled with a hushed light, morning was well underway, if not over… </p>
+                    Eventually it stopped and I was awake. It wasn't a jolt, but more like the measured docking of a barge. My room was filled with a hushed light, morning was well underway, if not over...</p>
 
         </div>
         <img class="map-img" src="nye25/GR-circle-2.png" alt="map" z-index="-1">
