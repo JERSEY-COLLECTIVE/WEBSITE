@@ -25,7 +25,7 @@
 
         <div class="item2" id="rules">
             <h3>Rules</h3>
-            <p>Click and read...</p>
+            <p>Click and read each rule below to reveal the address</p>
             <h2 class="hide-button">1<br>NO CREEPS, NO ASSHOLES<br><span class="expand">+</span></h2>
             <p class="hide-content">This is a party for everyone, except the creeps. We do not tolerate racism, homophobia, misogyny and general creepiness. If you're found to be one of these things, you will be removed from the party. If someone makes you uncomfortable, find us on the floor or at the door and we'll handle it.</p>
             <h2 class="hide-button">2<br>NO PHOTOS, NO PHONES<br><span class="expand">+</span></h2>
@@ -41,14 +41,14 @@
             <br>
         </div>
         <div class="item4" id="lore">
-            <p>                A sense of movement seeped into- making me aware of- my dream. It was slow, but it made me dizzy because it felt vast. As if I could suddenly feel the spinning of the whole earth around the sun. 
+            <p>                A sense of movement seeped into- making me aware of- my dream. It was slow, but it made me dizzy because it also felt vast. As if I could suddenly detect the earth spinning around the sun.
                 <br><br>
                     Eventually it stopped and I was awake. It wasn't a jolt, but more like the measured docking of a barge. My room was filled with a hushed light, morning was well underway, if not over...</p>
 
         </div>
         <img class="map-img" src="nye25/GR-circle-2.png" alt="map" z-index="-1">
         <div class="item4m" id="lore-url">
-            <a href="/nye25/lore" target="_blank">(???)</a> <!--lore easter egg for mobile-->
+            <a href="/nye25/logbook" target="_blank">(???)</a> <!--lore easter egg for mobile-->
         </div>
     </div>
     
