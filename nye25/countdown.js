@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 31, 2024 12:00:00").getTime();
+var countDownDate = new Date("Dec 31, 2024 12:00:00 EST").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -15,13 +15,21 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML =
+  // Output the result in an element with id="address-timer"
+  document.getElementById("address-timer").innerHTML =
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    var timer = document.getElementById("address-timer");
+    timer.innerHTML = "";
+
+    var addy = document.createElement('a');
+    addy.setCl
+    addy.setAttribute('href',"/nye25/address-info.html");
+    addy.innerHTML = "CLICK HERE";
+    
+    timer.append(addy);
   }
 }, 1000);

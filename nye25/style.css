@@ -122,6 +122,13 @@ h3 {
   margin: 10px;
 }
 
+.timer a {
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 95%;
+  color: #fee300;
+}
+
 @keyframes blink {
   0% {
     opacity: 100%;
@@ -210,8 +217,8 @@ h3 {
 
 .lore .text,
 .text a {
-  animation: blink-yellow 5s linear infinite;
-  -webkit-animation: blink-yellow 5s linear infinite;
+  animation: blink-yellow 8s linear infinite;
+  -webkit-animation: blink-yellow 8s linear infinite;
   text-align: center;
 }
 
