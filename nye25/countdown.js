@@ -25,11 +25,11 @@ var x = setInterval(function () {
     var timer = document.getElementById("address-timer");
     timer.innerHTML = "";
 
-    var addy = document.createElement('a');
-    addy.setCl
-    addy.setAttribute('href',"/nye25/address-info.html");
+    var addy = document.createElement("a");
+    addy.setCl;
+    addy.setAttribute("href", "/nye25/address.html");
     addy.innerHTML = "CLICK HERE";
-    
+
     timer.append(addy);
   }
 }, 1000);

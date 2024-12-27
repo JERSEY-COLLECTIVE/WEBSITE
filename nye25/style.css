@@ -202,7 +202,9 @@ h3 {
   align-content: center;
 }
 
-.lore .text {
+.lore .text,
+.address,
+.text {
   padding: 10px;
 }
 
@@ -220,6 +222,16 @@ h3 {
   animation: blink-yellow 8s linear infinite;
   -webkit-animation: blink-yellow 8s linear infinite;
   text-align: center;
+}
+
+.address img {
+  width: 80%;
+}
+
+.address a {
+  animation: none;
+  -webkit-animation: none;
+  color: white;
 }
 
 @keyframes blink-yellow {
