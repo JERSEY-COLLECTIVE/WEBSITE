@@ -27,7 +27,7 @@ var x = setInterval(function () {
 
     var addy = document.createElement("a");
     addy.setCl;
-    addy.setAttribute("href", "/nye25/address.html");
+    addy.setAttribute("href", "/nye25/sunspot.html");
     addy.innerHTML = "CLICK HERE";
 
     timer.append(addy);
